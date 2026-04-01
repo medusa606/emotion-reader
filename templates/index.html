@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emotion Reader — Demo</title>
+  <style>
+    /* ── Reset & base ──────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:         #1a1a2e;
+      --surface:    #16213e;
+      --panel:      #0f3460;
+      --accent:     #e94560;
+      --text:       #eaeaea;
+      --text-muted: #8892a4;
+      --radius:     8px;
+      --font-book:  "Georgia", serif;
+      --font-ui:    "Segoe UI", system-ui, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-ui);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── Header ────────────────────────────────────────────────────── */
+    header {
+      background: var(--surface);
+      border-bottom: 2px solid var(--panel);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header h1 {
+      font-size: 1.4rem;
+      color: var(--accent);
+      white-space: nowrap;
+    }
+    header h1 span { color: var(--text); font-weight: 300; }
+
+    /* ── Controls ──────────────────────────────────────────────────── */
+    .controls {
+      display: flex;
+      gap: .75rem;
+      align-items: center;
+      flex-wrap: wrap;
+      flex: 1;
+    }
+    select, button {
+      background: var(--panel);
+      color: var(--text);
+      border: 1px solid #2a4a7f;
+      border-radius: var(--radius);
+      padding: .45rem .9rem;
+      font-size: .9rem;
+      cursor: pointer;
+      transition: background .2s;
+    }
+    select:focus, button:focus { outline: 2px solid var(--accent); }
+    button:hover { background: #1a3a6a; }
+    button.primary {
+      background: var(--accent);
+      border-color: var(--accent);
+      font-weight: 600;
+    }
+    button.primary:hover { background: #c73652; }
+    button:disabled { opacity: .4; cursor: not-allowed; }
+
+    .granularity-toggle {
+      display: flex;
+      gap: .4rem;
+      background: var(--surface);
+      border: 1px solid #2a4a7f;
+      border-radius: var(--radius);
+      padding: .25rem;
+    }
+    .granularity-toggle button {
+      border: none;
+      background: transparent;
+      padding: .3rem .75rem;
+    }
+    .granularity-toggle button.active {
+      background: var(--accent);
+    }
+
+    /* ── Main layout ───────────────────────────────────────────────── */
+    main {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 1.5rem;
+      padding: 1.5rem 2rem;
+      flex: 1;
+    }
+
+    @media (max-width: 900px) {
+      main { grid-template-columns: 1fr; }
+    }
+
+    /* ── Book panel ────────────────────────────────────────────────── */
+    .book-panel {
+      background: var(--surface);
+      border-radius: var(--radius);
+      padding: 2rem;
+      position: relative;
+    }
+    .book-meta {
+      margin-bottom: 1.25rem;
+      border-bottom: 1px solid var(--panel);
+      padding-bottom: .75rem;
+    }
+    .book-meta h2 { font-size: 1.1rem; }
+    .book-meta p  { color: var(--text-muted); font-size: .85rem; margin-top:.2rem; }
+
+    #book-content {
+      font-family: var(--font-book);
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: #dde1e8;
+    }
+
+    /* Sentence / paragraph segments */
+    .segment {
+      display: inline;           /* sentences flow inline */
+      border-radius: 3px;
+      padding: 0 2px;
+      cursor: pointer;
+      transition: filter .2s;
+      position: relative;
+    }
+    .segment:hover { filter: brightness(1.25); }
+
+    /* paragraph mode wraps as block */
+    .segment.block {
+      display: block;
+      margin-bottom: .75rem;
+      padding: .5rem .75rem;
+      border-left: 3px solid transparent;
+      border-radius: 4px;
+    }
+
+    /* Emotion tooltip */
+    .segment .tooltip {
+      display: none;
+      position: absolute;
+      bottom: calc(100% + 6px);
+      left: 0;
+      background: #0a0a1a;
+      border: 1px solid #2a4a7f;
+      border-radius: var(--radius);
+      padding: .5rem .75rem;
+      min-width: 180px;
+      z-index: 100;
+      pointer-events: none;
+    }
+    .segment:hover .tooltip { display: block; }
+
+    .tooltip-emotion {
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+      font-family: var(--font-ui);
+      font-size: .78rem;
+      margin-bottom: .25rem;
+    }
+    .tooltip-emotion:last-child { margin-bottom: 0; }
+    .tooltip-dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .tooltip-bar-wrap {
+      flex: 1;
+      background: #1e2a3a;
+      border-radius: 3px;
+      height: 5px;
+      overflow: hidden;
+    }
+    .tooltip-bar {
+      height: 100%;
+      border-radius: 3px;
+    }
+    .tooltip-pct {
+      font-size: .72rem;
+      color: var(--text-muted);
+      min-width: 34px;
+      text-align: right;
+    }
+
+    /* ── Pagination ────────────────────────────────────────────────── */
+    .pagination {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--panel);
+    }
+    .pagination span { color: var(--text-muted); font-size: .9rem; }
+
+    /* ── Sidebar / legend ──────────────────────────────────────────── */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+    }
+    .card h3 {
+      font-size: .85rem;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--text-muted);
+      margin-bottom: .75rem;
+    }
+
+    /* Emotion legend */
+    .legend-group { margin-bottom: .75rem; }
+    .legend-group-title {
+      font-size: .75rem;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--text-muted);
+      margin-bottom: .35rem;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      font-size: .82rem;
+      margin-bottom: .2rem;
+    }
+    .legend-swatch {
+      width: 12px; height: 12px;
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+
+    /* Page emotion summary */
+    #emotion-summary { font-size: .88rem; }
+    .summary-row {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      margin-bottom: .5rem;
+    }
+    .summary-label {
+      min-width: 110px;
+      text-transform: capitalize;
+    }
+    .summary-bar-wrap {
+      flex: 1;
+      background: var(--panel);
+      border-radius: 3px;
+      height: 8px;
+    }
+    .summary-bar {
+      height: 100%;
+      border-radius: 3px;
+      transition: width .5s ease;
+    }
+    .summary-pct {
+      font-size: .78rem;
+      color: var(--text-muted);
+      min-width: 36px;
+      text-align: right;
+    }
+
+    /* Status / loading */
+    #status {
+      color: var(--text-muted);
+      font-size: .85rem;
+      font-style: italic;
+    }
+    .spinner {
+      display: inline-block;
+      width: 14px; height: 14px;
+      border: 2px solid var(--text-muted);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin .7s linear infinite;
+      vertical-align: middle;
+      margin-right: .4rem;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--panel); border-radius: 3px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Emotion <span>Reader</span></h1>
+
+  <div class="controls">
+    <select id="book-select">
+      <option value="">— select a book —</option>
+      {% for b in books %}
+      <option value="{{ b.id }}">{{ b.title }} — {{ b.author }}</option>
+      {% endfor %}
+    </select>
+
+    <button id="load-btn" class="primary" disabled>Load Book</button>
+
+    <div class="granularity-toggle">
+      <button id="gran-sentence" class="active" data-gran="sentence">Sentence</button>
+      <button id="gran-para"     data-gran="paragraph">Paragraph</button>
+    </div>
+
+    <button id="analyse-btn" disabled>Analyse Page</button>
+
+    <span id="status">Select a book to begin.</span>
+  </div>
+</header>
+
+<main>
+  <!-- Book display -->
+  <section class="book-panel">
+    <div class="book-meta" id="book-meta" style="display:none">
+      <h2 id="book-title"></h2>
+      <p id="book-author"></p>
+    </div>
+
+    <div id="book-content">
+      <p style="color: var(--text-muted); font-style:italic;">
+        Choose a book from the list above and click "Load Book".
+      </p>
+    </div>
+
+    <div class="pagination" id="pagination" style="display:none">
+      <button id="prev-btn">◀ Prev</button>
+      <span id="page-info">Page 1</span>
+      <button id="next-btn">Next ▶</button>
+    </div>
+  </section>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+
+    <!-- Page emotion summary -->
+    <div class="card">
+      <h3>Page Emotion Summary</h3>
+      <div id="emotion-summary">
+        <p style="color:var(--text-muted);font-size:.85rem;font-style:italic">
+          Run analysis to see results.
+        </p>
+      </div>
+    </div>
+
+    <!-- Legend -->
+    <div class="card">
+      <h3>Colour Legend</h3>
+      <div id="legend"></div>
+    </div>
+
+  </aside>
+</main>
+
+<script>
+// ── Emotion metadata (mirrors Python dict) ──────────────────────────────────
+const EMOTION_META = {
+  fear:           { colour: "#c0392b", group: "Tension / Danger" },
+  nervousness:    { colour: "#e74c3c", group: "Tension / Danger" },
+  anger:          { colour: "#e67e22", group: "Tension / Danger" },
+  annoyance:      { colour: "#f39c12", group: "Tension / Danger" },
+  disgust:        { colour: "#8e44ad", group: "Drama / Darkness" },
+  grief:          { colour: "#6c3483", group: "Drama / Darkness" },
+  sadness:        { colour: "#5b2c6f", group: "Drama / Darkness" },
+  remorse:        { colour: "#76448a", group: "Drama / Darkness" },
+  joy:            { colour: "#27ae60", group: "Positive / Uplifting" },
+  love:           { colour: "#e91e63", group: "Positive / Uplifting" },
+  admiration:     { colour: "#2ecc71", group: "Positive / Uplifting" },
+  excitement:     { colour: "#f1c40f", group: "Positive / Uplifting" },
+  amusement:      { colour: "#1abc9c", group: "Positive / Uplifting" },
+  gratitude:      { colour: "#16a085", group: "Positive / Uplifting" },
+  pride:          { colour: "#148f77", group: "Positive / Uplifting" },
+  optimism:       { colour: "#45b39d", group: "Positive / Uplifting" },
+  relief:         { colour: "#52be80", group: "Positive / Uplifting" },
+  surprise:       { colour: "#3498db", group: "Contemplative" },
+  curiosity:      { colour: "#2980b9", group: "Contemplative" },
+  realization:    { colour: "#1f618d", group: "Contemplative" },
+  confusion:      { colour: "#5d6d7e", group: "Contemplative" },
+  approval:       { colour: "#85c1e9", group: "Contemplative" },
+  desire:         { colour: "#a9cce3", group: "Contemplative" },
+  neutral:        { colour: "#95a5a6", group: "Neutral / Flat" },
+  caring:         { colour: "#abebc6", group: "Neutral / Flat" },
+  disapproval:    { colour: "#aab7b8", group: "Neutral / Flat" },
+  embarrassment:  { colour: "#d7bde2", group: "Neutral / Flat" },
+  disappointment: { colour: "#a2d9ce", group: "Neutral / Flat" },
+};
+
+// ── State ───────────────────────────────────────────────────────────────────
+let currentPage  = 1;
+let totalPages   = 1;
+let currentBookId = null;
+let currentText  = "";
+let granularity  = "sentence";
+
+// ── DOM refs ────────────────────────────────────────────────────────────────
+const bookSelect  = document.getElementById("book-select");
+const loadBtn     = document.getElementById("load-btn");
+const analyseBtn  = document.getElementById("analyse-btn");
+const bookContent = document.getElementById("book-content");
+const bookMeta    = document.getElementById("book-meta");
+const bookTitle   = document.getElementById("book-title");
+const bookAuthor  = document.getElementById("book-author");
+const pageInfo    = document.getElementById("page-info");
+const pagination  = document.getElementById("pagination");
+const prevBtn     = document.getElementById("prev-btn");
+const nextBtn     = document.getElementById("next-btn");
+const statusEl    = document.getElementById("status");
+const summaryEl   = document.getElementById("emotion-summary");
+const legendEl    = document.getElementById("legend");
+
+// ── Build legend ─────────────────────────────────────────────────────────────
+function buildLegend() {
+  const groups = {};
+  for (const [label, meta] of Object.entries(EMOTION_META)) {
+    if (!groups[meta.group]) groups[meta.group] = [];
+    groups[meta.group].push({ label, colour: meta.colour });
+  }
+  legendEl.innerHTML = "";
+  for (const [group, items] of Object.entries(groups)) {
+    const gDiv = document.createElement("div");
+    gDiv.className = "legend-group";
+    gDiv.innerHTML = `<div class="legend-group-title">${group}</div>`;
+    for (const { label, colour } of items) {
+      gDiv.innerHTML += `
+        <div class="legend-item">
+          <div class="legend-swatch" style="background:${colour}"></div>
+          <span>${label}</span>
+        </div>`;
+    }
+    legendEl.appendChild(gDiv);
+  }
+}
+buildLegend();
+
+// ── Granularity toggle ───────────────────────────────────────────────────────
+document.querySelectorAll(".granularity-toggle button").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".granularity-toggle button")
+            .forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    granularity = btn.dataset.gran;
+    // re-run analysis if we already have text
+    if (currentText) renderPlainText(currentText);
+  });
+});
+
+// ── Book select ──────────────────────────────────────────────────────────────
+bookSelect.addEventListener("change", () => {
+  loadBtn.disabled = !bookSelect.value;
+});
+
+// ── Load book ────────────────────────────────────────────────────────────────
+loadBtn.addEventListener("click", async () => {
+  currentBookId = bookSelect.value;
+  currentPage   = 1;
+  await fetchPage(currentBookId, currentPage);
+});
+
+// ── Pagination ───────────────────────────────────────────────────────────────
+prevBtn.addEventListener("click", async () => {
+  if (currentPage > 1) {
+    currentPage--;
+    await fetchPage(currentBookId, currentPage);
+  }
+});
+nextBtn.addEventListener("click", async () => {
+  if (currentPage < totalPages) {
+    currentPage++;
+    await fetchPage(currentBookId, currentPage);
+  }
+});
+
+// ── Fetch a page ─────────────────────────────────────────────────────────────
+async function fetchPage(bookId, page) {
+  setStatus("⏳ Fetching page…", true);
+  loadBtn.disabled    = true;
+  analyseBtn.disabled = true;
+
+  try {
+    const res  = await fetch(`/api/fetch-book?id=${bookId}&page=${page}`);
+    const data = await res.json();
+    if (data.error) throw new Error(data.error);
+
+    totalPages  = data.total_pages;
+    currentText = data.text;
+
+    bookTitle.textContent  = data.title;
+    bookAuthor.textContent = `${data.author}  ·  Page ${data.page} of ${data.total_pages}`;
+    bookMeta.style.display = "";
+    pagination.style.display = "";
+
+    pageInfo.textContent = `Page ${data.page} of ${data.total_pages}`;
+    prevBtn.disabled = data.page <= 1;
+    nextBtn.disabled = data.page >= data.total_pages;
+
+    renderPlainText(data.text);
+    summaryEl.innerHTML =
+      `<p style="color:var(--text-muted);font-style:italic;font-size:.85rem">
+        Click "Analyse Page" to tag emotions.
+      </p>`;
+    setStatus("Page loaded. Click Analyse Page.");
+    analyseBtn.disabled = false;
+  } catch (err) {
+    setStatus(`Error: ${err.message}`);
+  } finally {
+    loadBtn.disabled = false;
+  }
+}
+
+// ── Render plain (un-analysed) text ─────────────────────────────────────────
+function renderPlainText(text) {
+  bookContent.innerHTML = `<p>${escHtml(text).replace(/\n/g, "<br>")}</p>`;
+}
+
+// ── Analyse page ─────────────────────────────────────────────────────────────
+analyseBtn.addEventListener("click", async () => {
+  if (!currentText) return;
+  setStatus("", true, "Analysing emotions…");
+  analyseBtn.disabled = true;
+
+  try {
+    const res  = await fetch("/api/analyse", {
+      method:  "POST",
+      headers: { "Content-Type": "application/json" },
+      body:    JSON.stringify({ text: currentText, granularity }),
+    });
+    const data = await res.json();
+    if (data.error) throw new Error(data.error);
+
+    renderAnnotated(data.segments);
+    renderSummary(data.segments);
+    setStatus(`Analysis complete — ${data.segments.length} segments tagged.`);
+  } catch (err) {
+    setStatus(`Error: ${err.message}`);
+  } finally {
+    analyseBtn.disabled = false;
+  }
+});
+
+// ── Render annotated segments ────────────────────────────────────────────────
+function renderAnnotated(segments) {
+  const isBlock = granularity === "paragraph";
+  bookContent.innerHTML = "";
+
+  for (const seg of segments) {
+    const dom   = seg.dominant;
+    const span  = document.createElement("span");
+    span.className = isBlock ? "segment block" : "segment";
+
+    // Background tint based on dominant emotion
+    if (dom) {
+      const alpha = Math.min(0.55, dom.score * 1.2);
+      span.style.background = hexToRgba(dom.colour, alpha * 0.45);
+      if (isBlock) span.style.borderLeftColor = dom.colour;
+    }
+
+    span.innerHTML = escHtml(seg.text);
+
+    // Tooltip
+    if (seg.emotions.length) {
+      const tip = document.createElement("div");
+      tip.className = "tooltip";
+
+      for (const em of seg.emotions) {
+        const pct = Math.round(em.score * 100);
+        tip.innerHTML += `
+          <div class="tooltip-emotion">
+            <div class="tooltip-dot" style="background:${em.colour}"></div>
+            <span style="flex:1;text-transform:capitalize">${em.label}</span>
+            <div class="tooltip-bar-wrap">
+              <div class="tooltip-bar"
+                   style="width:${pct}%;background:${em.colour}"></div>
+            </div>
+            <span class="tooltip-pct">${pct}%</span>
+          </div>`;
+      }
+      span.appendChild(tip);
+    }
+
+    bookContent.appendChild(span);
+    if (!isBlock) bookContent.appendChild(document.createTextNode(" "));
+  }
+}
+
+// ── Render page-level summary ────────────────────────────────────────────────
+function renderSummary(segments) {
+  const totals = {};
+  for (const seg of segments) {
+    for (const em of seg.emotions) {
+      totals[em.label] = (totals[em.label] || 0) + em.score;
+    }
+  }
+
+  const sorted = Object.entries(totals)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 8);
+
+  const maxVal = sorted[0]?.[1] || 1;
+
+  summaryEl.innerHTML = "";
+  for (const [label, val] of sorted) {
+    const pct    = Math.round((val / maxVal) * 100);
+    const colour = EMOTION_META[label]?.colour ?? "#95a5a6";
+    summaryEl.innerHTML += `
+      <div class="summary-row">
+        <span class="summary-label">${label}</span>
+        <div class="summary-bar-wrap">
+          <div class="summary-bar" style="width:${pct}%;background:${colour}"></div>
+        </div>
+        <span class="summary-pct">${pct}%</span>
+      </div>`;
+  }
+}
+
+// ── Helpers ──────────────────────────────────────────────────────────────────
+function setStatus(msg, loading = false, loadingMsg = "") {
+  statusEl.innerHTML = loading
+    ? `<span class="spinner"></span>${loadingMsg || msg}`
+    : msg;
+}
+
+function escHtml(str) {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function hexToRgba(hex, alpha) {
+  const r = parseInt(hex.slice(1, 3), 16);
+  const g = parseInt(hex.slice(3, 5), 16);
+  const b = parseInt(hex.slice(5, 7), 16);
+  return `rgba(${r},${g},${b},${alpha})`;
+}
+</script>
+</body>
+</html>
