@@ -1,0 +1,2463 @@
+{
+  "book_id": "1400",
+  "title": "Great Expectations",
+  "author": "Charles Dickens",
+  "timestamp": "2026-04-02T10:10:04.307592",
+  "n_sentences": 6762,
+  "n_pages": 406,
+  "settings": {
+    "neutral_suppression": 1.0,
+    "ensemble_weight": 0.35,
+    "min_score": 0.05,
+    "batch_size": 32
+  },
+  "performance": {
+    "model_load_s": 1.53,
+    "inference_s": 74.21,
+    "sentences_per_sec": 91.13,
+    "pages_per_sec": 5.4713,
+    "avg_cpu_pct": 7.0,
+    "avg_gpu_vram_pct": 14.0,
+    "peak_vram_gb": 0.79,
+    "device": "cuda:0",
+    "gpu_name": "Quadro RTX 3000"
+  },
+  "page_summaries": {
+    "1": {
+      "Tension / Danger": 0.005166666666666666,
+      "Drama / Darkness": 0.0035825,
+      "Positive / Uplifting": 0.0031055555555555554,
+      "Contemplative": 0.0046211111111111106
+    },
+    "2": {
+      "Tension / Danger": 0.028379062499999996,
+      "Drama / Darkness": 0.028364375,
+      "Positive / Uplifting": 0.006025,
+      "Contemplative": 0.026111041666666668
+    },
+    "3": {
+      "Tension / Danger": 0.08939966666666667,
+      "Drama / Darkness": 0.028610166666666666,
+      "Positive / Uplifting": 0.005214148148148148,
+      "Contemplative": 0.013978222222222223
+    },
+    "4": {
+      "Tension / Danger": 0.07097973684210526,
+      "Drama / Darkness": 0.013833289473684209,
+      "Positive / Uplifting": 0.006313976608187135,
+      "Contemplative": 0.02819201754385965
+    },
+    "5": {
+      "Tension / Danger": 0.0776420238095238,
+      "Drama / Darkness": 0.02552202380952381,
+      "Positive / Uplifting": 0.004536984126984126,
+      "Contemplative": 0.01746
+    },
+    "6": {
+      "Tension / Danger": 0.05366779411764705,
+      "Drama / Darkness": 0.022819705882352943,
+      "Positive / Uplifting": 0.008439869281045752,
+      "Contemplative": 0.029319901960784323
+    },
+    "7": {
+      "Tension / Danger": 0.03682423076923077,
+      "Drama / Darkness": 0.020896923076923084,
+      "Positive / Uplifting": 0.0043408547008547,
+      "Contemplative": 0.02265230769230769
+    },
+    "8": {
+      "Tension / Danger": 0.04980236111111111,
+      "Drama / Darkness": 0.019865416666666667,
+      "Positive / Uplifting": 0.006569876543209876,
+      "Contemplative": 0.027580740740740736
+    },
+    "9": {
+      "Tension / Danger": 0.05134157894736841,
+      "Drama / Darkness": 0.030946578947368415,
+      "Positive / Uplifting": 0.008123859649122808,
+      "Contemplative": 0.02812324561403509
+    },
+    "10": {
+      "Tension / Danger": 0.054692666666666674,
+      "Drama / Darkness": 0.033324000000000006,
+      "Positive / Uplifting": 0.0034896296296296294,
+      "Contemplative": 0.03332266666666667
+    },
+    "11": {
+      "Tension / Danger": 0.03301729166666667,
+      "Drama / Darkness": 0.012118541666666668,
+      "Positive / Uplifting": 0.015689722222222223,
+      "Contemplative": 0.024684722222222222
+    },
+    "12": {
+      "Tension / Danger": 0.07814026315789474,
+      "Drama / Darkness": 0.011408947368421051,
+      "Positive / Uplifting": 0.007137368421052632,
+      "Contemplative": 0.03092201754385965
+    },
+    "13": {
+      "Tension / Danger": 0.07292875,
+      "Drama / Darkness": 0.026323125000000003,
+      "Positive / Uplifting": 0.004231203703703703,
+      "Contemplative": 0.017830555555555554
+    },
+    "14": {
+      "Tension / Danger": 0.07092250000000001,
+      "Drama / Darkness": 0.01713285714285714,
+      "Positive / Uplifting": 0.006590952380952382,
+      "Contemplative": 0.03974690476190476
+    },
+    "15": {
+      "Tension / Danger": 0.053008124999999996,
+      "Drama / Darkness": 0.031147500000000005,
+      "Positive / Uplifting": 0.0046727777777777766,
+      "Contemplative": 0.031956874999999996
+    },
+    "16": {
+      "Tension / Danger": 0.03922288461538462,
+      "Drama / Darkness": 0.011629423076923075,
+      "Positive / Uplifting": 0.013474615384615387,
+      "Contemplative": 0.027108974358974358
+    },
+    "17": {
+      "Tension / Danger": 0.0760975,
+      "Drama / Darkness": 0.012506578947368419,
+      "Positive / Uplifting": 0.00407625730994152,
+      "Contemplative": 0.04034333333333333
+    },
+    "18": {
+      "Tension / Danger": 0.040829411764705885,
+      "Drama / Darkness": 0.028568823529411768,
+      "Positive / Uplifting": 0.012265555555555556,
+      "Contemplative": 0.019297254901960784
+    },
+    "19": {
+      "Tension / Danger": 0.0488234375,
+      "Drama / Darkness": 0.03933359375,
+      "Positive / Uplifting": 0.011314513888888888,
+      "Contemplative": 0.02550020833333333
+    },
+    "20": {
+      "Tension / Danger": 0.027412500000000003,
+      "Drama / Darkness": 0.028502884615384617,
+      "Positive / Uplifting": 0.01389803418803419,
+      "Contemplative": 0.02128128205128205
+    },
+    "21": {
+      "Tension / Danger": 0.017358035714285715,
+      "Drama / Darkness": 0.025430178571428572,
+      "Positive / Uplifting": 0.014680079365079366,
+      "Contemplative": 0.029566904761904763
+    },
+    "22": {
+      "Tension / Danger": 0.01774125,
+      "Drama / Darkness": 0.01608175,
+      "Positive / Uplifting": 0.003873111111111111,
+      "Contemplative": 0.02226966666666667
+    },
+    "23": {
+      "Tension / Danger": 0.06573644736842105,
+      "Drama / Darkness": 0.02810355263157894,
+      "Positive / Uplifting": 0.00848543859649123,
+      "Contemplative": 0.02803798245614035
+    },
+    "24": {
+      "Tension / Danger": 0.045573026315789474,
+      "Drama / Darkness": 0.028423815789473682,
+      "Positive / Uplifting": 0.01303690058479532,
+      "Contemplative": 0.03096359649122807
+    },
+    "25": {
+      "Tension / Danger": 0.05872375,
+      "Drama / Darkness": 0.021505892857142855,
+      "Positive / Uplifting": 0.013199761904761905,
+      "Contemplative": 0.026151785714285718
+    },
+    "26": {
+      "Tension / Danger": 0.03181132352941176,
+      "Drama / Darkness": 0.013446176470588234,
+      "Positive / Uplifting": 0.0038362745098039215,
+      "Contemplative": 0.03415245098039216
+    },
+    "27": {
+      "Tension / Danger": 0.02818204545454545,
+      "Drama / Darkness": 0.01663897727272727,
+      "Positive / Uplifting": 0.02152131313131313,
+      "Contemplative": 0.01919409090909091
+    },
+    "28": {
+      "Tension / Danger": 0.05161964285714286,
+      "Drama / Darkness": 0.018094464285714287,
+      "Positive / Uplifting": 0.007657777777777778,
+      "Contemplative": 0.022091190476190473
+    },
+    "29": {
+      "Tension / Danger": 0.07591583333333334,
+      "Drama / Darkness": 0.01672940476190476,
+      "Positive / Uplifting": 0.00487084656084656,
+      "Contemplative": 0.03955595238095237
+    },
+    "30": {
+      "Tension / Danger": 0.05904287500000001,
+      "Drama / Darkness": 0.02186475,
+      "Positive / Uplifting": 0.007496555555555556,
+      "Contemplative": 0.023351999999999998
+    },
+    "31": {
+      "Tension / Danger": 0.07978129629629631,
+      "Drama / Darkness": 0.013675185185185186,
+      "Positive / Uplifting": 0.0057108641975308645,
+      "Contemplative": 0.02971141975308642
+    },
+    "32": {
+      "Tension / Danger": 0.048889482758620685,
+      "Drama / Darkness": 0.017045948275862068,
+      "Positive / Uplifting": 0.0058816091954023006,
+      "Contemplative": 0.021812471264367816
+    },
+    "33": {
+      "Tension / Danger": 0.037857380952380955,
+      "Drama / Darkness": 0.030484285714285714,
+      "Positive / Uplifting": 0.005763597883597883,
+      "Contemplative": 0.02564357142857143
+    },
+    "34": {
+      "Tension / Danger": 0.07442979166666666,
+      "Drama / Darkness": 0.022689583333333336,
+      "Positive / Uplifting": 0.020806388888888885,
+      "Contemplative": 0.021951666666666664
+    },
+    "35": {
+      "Tension / Danger": 0.039009,
+      "Drama / Darkness": 0.02746925,
+      "Positive / Uplifting": 0.0076657777777777774,
+      "Contemplative": 0.0212895
+    },
+    "36": {
+      "Tension / Danger": 0.028166923076923076,
+      "Drama / Darkness": 0.015680769230769234,
+      "Positive / Uplifting": 0.008737008547008547,
+      "Contemplative": 0.01776974358974359
+    },
+    "37": {
+      "Tension / Danger": 0.02092428571428571,
+      "Drama / Darkness": 0.01237380952380952,
+      "Positive / Uplifting": 0.011802592592592594,
+      "Contemplative": 0.03398936507936508
+    },
+    "38": {
+      "Tension / Danger": 0.021684230769230768,
+      "Drama / Darkness": 0.011210000000000001,
+      "Positive / Uplifting": 0.01886179487179487,
+      "Contemplative": 0.028617307692307695
+    },
+    "39": {
+      "Tension / Danger": 0.0249096875,
+      "Drama / Darkness": 0.032552187499999996,
+      "Positive / Uplifting": 0.0064602083333333326,
+      "Contemplative": 0.0306421875
+    },
+    "40": {
+      "Tension / Danger": 0.027606562499999997,
+      "Drama / Darkness": 0.0270896875,
+      "Positive / Uplifting": 0.016404305555555557,
+      "Contemplative": 0.03626635416666666
+    },
+    "41": {
+      "Tension / Danger": 0.043491249999999995,
+      "Drama / Darkness": 0.019625714285714285,
+      "Positive / Uplifting": 0.007511428571428572,
+      "Contemplative": 0.03694357142857143
+    },
+    "42": {
+      "Tension / Danger": 0.04017583333333333,
+      "Drama / Darkness": 0.017645166666666663,
+      "Positive / Uplifting": 0.014869037037037037,
+      "Contemplative": 0.020402444444444445
+    },
+    "43": {
+      "Tension / Danger": 0.022603333333333333,
+      "Drama / Darkness": 0.01707904761904762,
+      "Positive / Uplifting": 0.006633280423280423,
+      "Contemplative": 0.04638761904761906
+    },
+    "44": {
+      "Tension / Danger": 0.037007500000000006,
+      "Drama / Darkness": 0.0077175,
+      "Positive / Uplifting": 0.02395088888888889,
+      "Contemplative": 0.035425333333333336
+    },
+    "45": {
+      "Tension / Danger": 0.013973947368421055,
+      "Drama / Darkness": 0.025834342105263156,
+      "Positive / Uplifting": 0.010455672514619884,
+      "Contemplative": 0.03165877192982456
+    },
+    "46": {
+      "Tension / Danger": 0.06753386363636361,
+      "Drama / Darkness": 0.026690681818181815,
+      "Positive / Uplifting": 0.008318787878787877,
+      "Contemplative": 0.029671363636363635
+    },
+    "47": {
+      "Tension / Danger": 0.040922656249999995,
+      "Drama / Darkness": 0.0168325,
+      "Positive / Uplifting": 0.009888472222222222,
+      "Contemplative": 0.03235333333333334
+    },
+    "48": {
+      "Tension / Danger": 0.024446875,
+      "Drama / Darkness": 0.036137875,
+      "Positive / Uplifting": 0.007819,
+      "Contemplative": 0.037954083333333326
+    },
+    "49": {
+      "Tension / Danger": 0.05462730769230769,
+      "Drama / Darkness": 0.05838596153846154,
+      "Positive / Uplifting": 0.004749658119658119,
+      "Contemplative": 0.02994423076923077
+    },
+    "50": {
+      "Tension / Danger": 0.023178874999999998,
+      "Drama / Darkness": 0.034858,
+      "Positive / Uplifting": 0.005352944444444444,
+      "Contemplative": 0.03610458333333333
+    },
+    "51": {
+      "Tension / Danger": 0.05086309523809525,
+      "Drama / Darkness": 0.02868583333333333,
+      "Positive / Uplifting": 0.009062539682539682,
+      "Contemplative": 0.026927380952380956
+    },
+    "52": {
+      "Tension / Danger": 0.04726942307692307,
+      "Drama / Darkness": 0.04279240384615384,
+      "Positive / Uplifting": 0.006329145299145299,
+      "Contemplative": 0.026317371794871793
+    },
+    "53": {
+      "Tension / Danger": 0.032350625,
+      "Drama / Darkness": 0.030246874999999996,
+      "Positive / Uplifting": 0.005273518518518517,
+      "Contemplative": 0.028701111111111115
+    },
+    "54": {
+      "Tension / Danger": 0.07878216666666667,
+      "Drama / Darkness": 0.01721016666666667,
+      "Positive / Uplifting": 0.019584222222222225,
+      "Contemplative": 0.03550255555555555
+    },
+    "55": {
+      "Tension / Danger": 0.060621166666666663,
+      "Drama / Darkness": 0.024478333333333335,
+      "Positive / Uplifting": 0.008400740740740742,
+      "Contemplative": 0.036228
+    },
+    "56": {
+      "Tension / Danger": 0.025237794117647063,
+      "Drama / Darkness": 0.007871029411764707,
+      "Positive / Uplifting": 0.017653660130718955,
+      "Contemplative": 0.041207156862745085
+    },
+    "57": {
+      "Tension / Danger": 0.0312896,
+      "Drama / Darkness": 0.011327,
+      "Positive / Uplifting": 0.008469377777777776,
+      "Contemplative": 0.04725119999999999
+    },
+    "58": {
+      "Tension / Danger": 0.05454855263157895,
+      "Drama / Darkness": 0.014218552631578946,
+      "Positive / Uplifting": 0.005115497076023392,
+      "Contemplative": 0.032757280701754384
+    },
+    "59": {
+      "Tension / Danger": 0.03584277777777778,
+      "Drama / Darkness": 0.011709583333333332,
+      "Positive / Uplifting": 0.005357160493827161,
+      "Contemplative": 0.023305370370370376
+    },
+    "60": {
+      "Tension / Danger": 0.010724833333333333,
+      "Drama / Darkness": 0.009794166666666665,
+      "Positive / Uplifting": 0.015956814814814816,
+      "Contemplative": 0.027674555555555556
+    },
+    "61": {
+      "Tension / Danger": 0.047136500000000005,
+      "Drama / Darkness": 0.020330333333333332,
+      "Positive / Uplifting": 0.010594296296296298,
+      "Contemplative": 0.018935666666666667
+    },
+    "62": {
+      "Tension / Danger": 0.04017557692307691,
+      "Drama / Darkness": 0.024639807692307693,
+      "Positive / Uplifting": 0.008032735042735044,
+      "Contemplative": 0.027917692307692307
+    },
+    "63": {
+      "Tension / Danger": 0.01609677083333333,
+      "Drama / Darkness": 0.011602604166666667,
+      "Positive / Uplifting": 0.007529953703703705,
+      "Contemplative": 0.030565555555555554
+    },
+    "64": {
+      "Tension / Danger": 0.021253333333333332,
+      "Drama / Darkness": 0.014552916666666667,
+      "Positive / Uplifting": 0.001606851851851852,
+      "Contemplative": 0.03428958333333333
+    },
+    "65": {
+      "Tension / Danger": 0.02929,
+      "Drama / Darkness": 0.017050937500000002,
+      "Positive / Uplifting": 0.015998981481481482,
+      "Contemplative": 0.022055486111111116
+    },
+    "66": {
+      "Tension / Danger": 0.0817655,
+      "Drama / Darkness": 0.024350999999999994,
+      "Positive / Uplifting": 0.0036440000000000005,
+      "Contemplative": 0.022085777777777774
+    },
+    "67": {
+      "Tension / Danger": 0.02679975,
+      "Drama / Darkness": 0.0610555,
+      "Positive / Uplifting": 0.005285388888888889,
+      "Contemplative": 0.0298695
+    },
+    "68": {
+      "Tension / Danger": 0.06048541666666666,
+      "Drama / Darkness": 0.03292666666666667,
+      "Positive / Uplifting": 0.013748148148148153,
+      "Contemplative": 0.026793888888888884
+    },
+    "69": {
+      "Tension / Danger": 0.03501195652173913,
+      "Drama / Darkness": 0.026697500000000002,
+      "Positive / Uplifting": 0.00893415458937198,
+      "Contemplative": 0.035439782608695646
+    },
+    "70": {
+      "Tension / Danger": 0.049921875000000004,
+      "Drama / Darkness": 0.03045458333333333,
+      "Positive / Uplifting": 0.008889444444444443,
+      "Contemplative": 0.035879027777777774
+    },
+    "71": {
+      "Tension / Danger": 0.06620749999999999,
+      "Drama / Darkness": 0.01920166666666667,
+      "Positive / Uplifting": 0.009849185185185185,
+      "Contemplative": 0.028308777777777773
+    },
+    "72": {
+      "Tension / Danger": 0.037710625000000005,
+      "Drama / Darkness": 0.03355575,
+      "Positive / Uplifting": 0.00986327777777778,
+      "Contemplative": 0.02492225
+    },
+    "73": {
+      "Tension / Danger": 0.04303859375,
+      "Drama / Darkness": 0.028118125,
+      "Positive / Uplifting": 0.014011805555555555,
+      "Contemplative": 0.03454552083333333
+    },
+    "74": {
+      "Tension / Danger": 0.028974204545454543,
+      "Drama / Darkness": 0.027438295454545458,
+      "Positive / Uplifting": 0.01271489898989899,
+      "Contemplative": 0.030510000000000002
+    },
+    "75": {
+      "Tension / Danger": 0.04966946428571429,
+      "Drama / Darkness": 0.029707857142857143,
+      "Positive / Uplifting": 0.004410793650793651,
+      "Contemplative": 0.034245476190476194
+    },
+    "76": {
+      "Tension / Danger": 0.047760434782608704,
+      "Drama / Darkness": 0.011219891304347824,
+      "Positive / Uplifting": 0.007059323671497585,
+      "Contemplative": 0.03304405797101449
+    },
+    "77": {
+      "Tension / Danger": 0.025377307692307692,
+      "Drama / Darkness": 0.043652307692307685,
+      "Positive / Uplifting": 0.017548119658119653,
+      "Contemplative": 0.037440384615384605
+    },
+    "78": {
+      "Tension / Danger": 0.08641,
+      "Drama / Darkness": 0.025931166666666665,
+      "Positive / Uplifting": 0.013525851851851851,
+      "Contemplative": 0.01896811111111111
+    },
+    "79": {
+      "Tension / Danger": 0.026506785714285715,
+      "Drama / Darkness": 0.018171785714285713,
+      "Positive / Uplifting": 0.004249047619047619,
+      "Contemplative": 0.02485845238095238
+    },
+    "80": {
+      "Tension / Danger": 0.03845306818181818,
+      "Drama / Darkness": 0.021845909090909093,
+      "Positive / Uplifting": 0.007000050505050505,
+      "Contemplative": 0.04145818181818181
+    },
+    "81": {
+      "Tension / Danger": 0.0700428125,
+      "Drama / Darkness": 0.02318953125,
+      "Positive / Uplifting": 0.007820277777777778,
+      "Contemplative": 0.017763854166666666
+    },
+    "82": {
+      "Tension / Danger": 0.06021895833333333,
+      "Drama / Darkness": 0.01867375,
+      "Positive / Uplifting": 0.0057384259259259255,
+      "Contemplative": 0.022709166666666666
+    },
+    "83": {
+      "Tension / Danger": 0.017597500000000002,
+      "Drama / Darkness": 0.03314583333333334,
+      "Positive / Uplifting": 0.007462870370370371,
+      "Contemplative": 0.027116944444444444
+    },
+    "84": {
+      "Tension / Danger": 0.024391153846153837,
+      "Drama / Darkness": 0.014071923076923076,
+      "Positive / Uplifting": 0.0051842735042735046,
+      "Contemplative": 0.043232435897435896
+    },
+    "85": {
+      "Tension / Danger": 0.03907592105263158,
+      "Drama / Darkness": 0.010445526315789475,
+      "Positive / Uplifting": 0.016049766081871347,
+      "Contemplative": 0.02773666666666667
+    },
+    "86": {
+      "Tension / Danger": 0.009013269230769231,
+      "Drama / Darkness": 0.02070634615384615,
+      "Positive / Uplifting": 0.014147008547008549,
+      "Contemplative": 0.044684230769230775
+    },
+    "87": {
+      "Tension / Danger": 0.036131578947368424,
+      "Drama / Darkness": 0.014271842105263163,
+      "Positive / Uplifting": 0.016425087719298244,
+      "Contemplative": 0.020972192982456138
+    },
+    "88": {
+      "Tension / Danger": 0.016796250000000002,
+      "Drama / Darkness": 0.0541903125,
+      "Positive / Uplifting": 0.02980472222222223,
+      "Contemplative": 0.021112499999999996
+    },
+    "89": {
+      "Tension / Danger": 0.015129666666666668,
+      "Drama / Darkness": 0.031055500000000003,
+      "Positive / Uplifting": 0.01567688888888889,
+      "Contemplative": 0.028746111111111108
+    },
+    "90": {
+      "Tension / Danger": 0.035686323529411756,
+      "Drama / Darkness": 0.02541985294117647,
+      "Positive / Uplifting": 0.018909346405228757,
+      "Contemplative": 0.03908666666666667
+    },
+    "91": {
+      "Tension / Danger": 0.034285,
+      "Drama / Darkness": 0.028816428571428573,
+      "Positive / Uplifting": 0.004514999999999999,
+      "Contemplative": 0.03137690476190476
+    },
+    "92": {
+      "Tension / Danger": 0.023949843749999998,
+      "Drama / Darkness": 0.009919531249999999,
+      "Positive / Uplifting": 0.01601298611111111,
+      "Contemplative": 0.031664375
+    },
+    "93": {
+      "Tension / Danger": 0.03835,
+      "Drama / Darkness": 0.020824375,
+      "Positive / Uplifting": 0.0014347222222222222,
+      "Contemplative": 0.025702083333333337
+    },
+    "94": {
+      "Tension / Danger": 0.03373316666666667,
+      "Drama / Darkness": 0.021541000000000008,
+      "Positive / Uplifting": 0.0064403703703703715,
+      "Contemplative": 0.020074333333333333
+    },
+    "95": {
+      "Tension / Danger": 0.05011776785714285,
+      "Drama / Darkness": 0.011667232142857142,
+      "Positive / Uplifting": 0.005681031746031746,
+      "Contemplative": 0.02375416666666667
+    },
+    "96": {
+      "Tension / Danger": 0.050761900000000006,
+      "Drama / Darkness": 0.013847700000000001,
+      "Positive / Uplifting": 0.008947688888888888,
+      "Contemplative": 0.038897933333333336
+    },
+    "97": {
+      "Tension / Danger": 0.039233750000000005,
+      "Drama / Darkness": 0.021250714285714286,
+      "Positive / Uplifting": 0.014475238095238097,
+      "Contemplative": 0.034759404761904755
+    },
+    "98": {
+      "Tension / Danger": 0.04793583333333334,
+      "Drama / Darkness": 0.03389583333333333,
+      "Positive / Uplifting": 0.007157592592592593,
+      "Contemplative": 0.0239325
+    },
+    "99": {
+      "Tension / Danger": 0.04280375,
+      "Drama / Darkness": 0.027213125,
+      "Positive / Uplifting": 0.006889861111111111,
+      "Contemplative": 0.03545840277777778
+    },
+    "100": {
+      "Tension / Danger": 0.04750571428571429,
+      "Drama / Darkness": 0.019116190476190478,
+      "Positive / Uplifting": 0.004627037037037038,
+      "Contemplative": 0.04810666666666666
+    },
+    "101": {
+      "Tension / Danger": 0.041013676470588234,
+      "Drama / Darkness": 0.018873382352941177,
+      "Positive / Uplifting": 0.0022898039215686274,
+      "Contemplative": 0.0233778431372549
+    },
+    "102": {
+      "Tension / Danger": 0.048559333333333336,
+      "Drama / Darkness": 0.03554583333333334,
+      "Positive / Uplifting": 0.006479555555555556,
+      "Contemplative": 0.02592011111111111
+    },
+    "103": {
+      "Tension / Danger": 0.030053833333333335,
+      "Drama / Darkness": 0.03438683333333334,
+      "Positive / Uplifting": 0.011570962962962963,
+      "Contemplative": 0.021272777777777776
+    },
+    "104": {
+      "Tension / Danger": 0.03792390625,
+      "Drama / Darkness": 0.01445125,
+      "Positive / Uplifting": 0.012665416666666665,
+      "Contemplative": 0.026597395833333332
+    },
+    "105": {
+      "Tension / Danger": 0.022345,
+      "Drama / Darkness": 0.014017874999999999,
+      "Positive / Uplifting": 0.019904555555555554,
+      "Contemplative": 0.03816733333333334
+    },
+    "106": {
+      "Tension / Danger": 0.021455277777777778,
+      "Drama / Darkness": 0.04203916666666666,
+      "Positive / Uplifting": 0.019084012345679014,
+      "Contemplative": 0.0434812962962963
+    },
+    "107": {
+      "Tension / Danger": 0.03825477272727273,
+      "Drama / Darkness": 0.06365954545454547,
+      "Positive / Uplifting": 0.003368787878787879,
+      "Contemplative": 0.02583863636363636
+    },
+    "108": {
+      "Tension / Danger": 0.0394578125,
+      "Drama / Darkness": 0.020835624999999997,
+      "Positive / Uplifting": 0.012916458333333332,
+      "Contemplative": 0.037009895833333334
+    },
+    "109": {
+      "Tension / Danger": 0.032965666666666664,
+      "Drama / Darkness": 0.030849999999999995,
+      "Positive / Uplifting": 0.022630592592592595,
+      "Contemplative": 0.03419811111111112
+    },
+    "110": {
+      "Tension / Danger": 0.05848486111111111,
+      "Drama / Darkness": 0.013025416666666666,
+      "Positive / Uplifting": 0.007677037037037036,
+      "Contemplative": 0.03867407407407407
+    },
+    "111": {
+      "Tension / Danger": 0.023721346153846152,
+      "Drama / Darkness": 0.015597499999999999,
+      "Positive / Uplifting": 0.009408034188034188,
+      "Contemplative": 0.03704525641025641
+    },
+    "112": {
+      "Tension / Danger": 0.040376875,
+      "Drama / Darkness": 0.02570479166666667,
+      "Positive / Uplifting": 0.008006018518518518,
+      "Contemplative": 0.038873333333333336
+    },
+    "113": {
+      "Tension / Danger": 0.03774333333333334,
+      "Drama / Darkness": 0.00875595238095238,
+      "Positive / Uplifting": 0.002732433862433862,
+      "Contemplative": 0.04244373015873017
+    },
+    "114": {
+      "Tension / Danger": 0.03643300000000001,
+      "Drama / Darkness": 0.021108500000000006,
+      "Positive / Uplifting": 0.008360518518518517,
+      "Contemplative": 0.03568766666666667
+    },
+    "115": {
+      "Tension / Danger": 0.03497714285714286,
+      "Drama / Darkness": 0.018459761904761902,
+      "Positive / Uplifting": 0.008613703703703703,
+      "Contemplative": 0.032118253968253976
+    },
+    "116": {
+      "Tension / Danger": 0.025373928571428568,
+      "Drama / Darkness": 0.007242142857142857,
+      "Positive / Uplifting": 0.008606402116402116,
+      "Contemplative": 0.027771349206349202
+    },
+    "117": {
+      "Tension / Danger": 0.026117916666666668,
+      "Drama / Darkness": 0.011372604166666666,
+      "Positive / Uplifting": 0.007379953703703703,
+      "Contemplative": 0.029044791666666663
+    },
+    "118": {
+      "Tension / Danger": 0.027643020833333337,
+      "Drama / Darkness": 0.01940625,
+      "Positive / Uplifting": 0.009991157407407405,
+      "Contemplative": 0.02565486111111111
+    },
+    "119": {
+      "Tension / Danger": 0.05155823529411765,
+      "Drama / Darkness": 0.014819411764705881,
+      "Positive / Uplifting": 0.007637450980392158,
+      "Contemplative": 0.023999117647058827
+    },
+    "120": {
+      "Tension / Danger": 0.037025833333333334,
+      "Drama / Darkness": 0.03149430555555556,
+      "Positive / Uplifting": 0.010602716049382717,
+      "Contemplative": 0.03055138888888889
+    },
+    "121": {
+      "Tension / Danger": 0.04310632352941176,
+      "Drama / Darkness": 0.026091470588235292,
+      "Positive / Uplifting": 0.010229738562091504,
+      "Contemplative": 0.02058431372549019
+    },
+    "122": {
+      "Tension / Danger": 0.035527500000000004,
+      "Drama / Darkness": 0.028385357142857143,
+      "Positive / Uplifting": 0.011792777777777779,
+      "Contemplative": 0.027598214285714285
+    },
+    "123": {
+      "Tension / Danger": 0.025576071428571427,
+      "Drama / Darkness": 0.024802857142857144,
+      "Positive / Uplifting": 0.016809920634920632,
+      "Contemplative": 0.033780357142857154
+    },
+    "124": {
+      "Tension / Danger": 0.0163525,
+      "Drama / Darkness": 0.018640535714285717,
+      "Positive / Uplifting": 0.015105317460317461,
+      "Contemplative": 0.04363904761904762
+    },
+    "125": {
+      "Tension / Danger": 0.027135789473684207,
+      "Drama / Darkness": 0.03303842105263158,
+      "Positive / Uplifting": 0.011210584795321638,
+      "Contemplative": 0.028316842105263154
+    },
+    "126": {
+      "Tension / Danger": 0.01856015625,
+      "Drama / Darkness": 0.036238906249999994,
+      "Positive / Uplifting": 0.014212430555555556,
+      "Contemplative": 0.03269458333333333
+    },
+    "127": {
+      "Tension / Danger": 0.05271291666666666,
+      "Drama / Darkness": 0.017030833333333332,
+      "Positive / Uplifting": 0.0066276851851851835,
+      "Contemplative": 0.014891111111111108
+    },
+    "128": {
+      "Tension / Danger": 0.043189000000000005,
+      "Drama / Darkness": 0.015405666666666668,
+      "Positive / Uplifting": 0.02182022222222222,
+      "Contemplative": 0.02056288888888889
+    },
+    "129": {
+      "Tension / Danger": 0.021927222222222223,
+      "Drama / Darkness": 0.023534027777777775,
+      "Positive / Uplifting": 0.009279753086419753,
+      "Contemplative": 0.035758518518518516
+    },
+    "130": {
+      "Tension / Danger": 0.01950210526315789,
+      "Drama / Darkness": 0.008474342105263157,
+      "Positive / Uplifting": 0.017690877192982457,
+      "Contemplative": 0.03786438596491228
+    },
+    "131": {
+      "Tension / Danger": 0.0469677380952381,
+      "Drama / Darkness": 0.019130952380952377,
+      "Positive / Uplifting": 0.007754179894179894,
+      "Contemplative": 0.023294920634920637
+    },
+    "132": {
+      "Tension / Danger": 0.032995625,
+      "Drama / Darkness": 0.013823125,
+      "Positive / Uplifting": 0.013909513888888891,
+      "Contemplative": 0.023074270833333327
+    },
+    "133": {
+      "Tension / Danger": 0.044524666666666664,
+      "Drama / Darkness": 0.020196,
+      "Positive / Uplifting": 0.018749333333333333,
+      "Contemplative": 0.029098999999999996
+    },
+    "134": {
+      "Tension / Danger": 0.04111472222222222,
+      "Drama / Darkness": 0.04393333333333333,
+      "Positive / Uplifting": 0.013277345679012348,
+      "Contemplative": 0.027563611111111115
+    },
+    "135": {
+      "Tension / Danger": 0.033927678571428574,
+      "Drama / Darkness": 0.028441964285714282,
+      "Positive / Uplifting": 0.010049285714285717,
+      "Contemplative": 0.03138535714285714
+    },
+    "136": {
+      "Tension / Danger": 0.028870125000000003,
+      "Drama / Darkness": 0.022162124999999998,
+      "Positive / Uplifting": 0.003599888888888889,
+      "Contemplative": 0.021086583333333336
+    },
+    "137": {
+      "Tension / Danger": 0.03976033333333333,
+      "Drama / Darkness": 0.035860333333333334,
+      "Positive / Uplifting": 0.005816074074074073,
+      "Contemplative": 0.05256422222222223
+    },
+    "138": {
+      "Tension / Danger": 0.04965333333333334,
+      "Drama / Darkness": 0.017103055555555552,
+      "Positive / Uplifting": 0.010864074074074071,
+      "Contemplative": 0.03780388888888889
+    },
+    "139": {
+      "Tension / Danger": 0.050446048387096785,
+      "Drama / Darkness": 0.013225645161290323,
+      "Positive / Uplifting": 0.007536953405017922,
+      "Contemplative": 0.0314602688172043
+    },
+    "140": {
+      "Tension / Danger": 0.07186395833333332,
+      "Drama / Darkness": 0.009282708333333334,
+      "Positive / Uplifting": 0.004099444444444444,
+      "Contemplative": 0.03490013888888889
+    },
+    "141": {
+      "Tension / Danger": 0.019062954545454546,
+      "Drama / Darkness": 0.026507727272727277,
+      "Positive / Uplifting": 0.006517171717171717,
+      "Contemplative": 0.023748333333333333
+    },
+    "142": {
+      "Tension / Danger": 0.017198281250000003,
+      "Drama / Darkness": 0.03210125,
+      "Positive / Uplifting": 0.0037399305555555562,
+      "Contemplative": 0.03547187499999999
+    },
+    "143": {
+      "Tension / Danger": 0.021575,
+      "Drama / Darkness": 0.038763181818181815,
+      "Positive / Uplifting": 0.008978434343434344,
+      "Contemplative": 0.038056515151515154
+    },
+    "144": {
+      "Tension / Danger": 0.037818125,
+      "Drama / Darkness": 0.015703541666666664,
+      "Positive / Uplifting": 0.024832407407407404,
+      "Contemplative": 0.03279722222222222
+    },
+    "145": {
+      "Tension / Danger": 0.031164090909090912,
+      "Drama / Darkness": 0.021483068181818183,
+      "Positive / Uplifting": 0.019679040404040404,
+      "Contemplative": 0.02022469696969697
+    },
+    "146": {
+      "Tension / Danger": 0.015244166666666666,
+      "Drama / Darkness": 0.017729722222222223,
+      "Positive / Uplifting": 0.021310740740740745,
+      "Contemplative": 0.041899537037037034
+    },
+    "147": {
+      "Tension / Danger": 0.032595874999999996,
+      "Drama / Darkness": 0.009572124999999999,
+      "Positive / Uplifting": 0.008655222222222222,
+      "Contemplative": 0.046221
+    },
+    "148": {
+      "Tension / Danger": 0.01783875,
+      "Drama / Darkness": 0.01415421875,
+      "Positive / Uplifting": 0.022810833333333336,
+      "Contemplative": 0.02584260416666666
+    },
+    "149": {
+      "Tension / Danger": 0.01667375,
+      "Drama / Darkness": 0.01695680555555555,
+      "Positive / Uplifting": 0.01704679012345679,
+      "Contemplative": 0.02277648148148148
+    },
+    "150": {
+      "Tension / Danger": 0.03747793478260869,
+      "Drama / Darkness": 0.02798771739130435,
+      "Positive / Uplifting": 0.018706666666666667,
+      "Contemplative": 0.01785485507246377
+    },
+    "151": {
+      "Tension / Danger": 0.0295905,
+      "Drama / Darkness": 0.03497416666666666,
+      "Positive / Uplifting": 0.004898296296296296,
+      "Contemplative": 0.028356777777777783
+    },
+    "152": {
+      "Tension / Danger": 0.01592140625,
+      "Drama / Darkness": 0.011999062500000001,
+      "Positive / Uplifting": 0.0055629166666666665,
+      "Contemplative": 0.055774687499999996
+    },
+    "153": {
+      "Tension / Danger": 0.02302710526315789,
+      "Drama / Darkness": 0.006833289473684208,
+      "Positive / Uplifting": 0.008442280701754387,
+      "Contemplative": 0.03853298245614036
+    },
+    "154": {
+      "Tension / Danger": 0.013989166666666667,
+      "Drama / Darkness": 0.017553888888888886,
+      "Positive / Uplifting": 0.017974567901234566,
+      "Contemplative": 0.02506324074074074
+    },
+    "155": {
+      "Tension / Danger": 0.019008181818181816,
+      "Drama / Darkness": 0.024847045454545455,
+      "Positive / Uplifting": 0.01347838383838384,
+      "Contemplative": 0.03470227272727273
+    },
+    "156": {
+      "Tension / Danger": 0.033805,
+      "Drama / Darkness": 0.028816833333333333,
+      "Positive / Uplifting": 0.005881333333333334,
+      "Contemplative": 0.06352022222222221
+    },
+    "157": {
+      "Tension / Danger": 0.02189277777777778,
+      "Drama / Darkness": 0.01580611111111111,
+      "Positive / Uplifting": 0.0215958024691358,
+      "Contemplative": 0.03589592592592592
+    },
+    "158": {
+      "Tension / Danger": 0.02590326923076923,
+      "Drama / Darkness": 0.02867096153846154,
+      "Positive / Uplifting": 0.013663247863247864,
+      "Contemplative": 0.026719615384615387
+    },
+    "159": {
+      "Tension / Danger": 0.048468,
+      "Drama / Darkness": 0.021650750000000003,
+      "Positive / Uplifting": 0.013482333333333332,
+      "Contemplative": 0.02892366666666667
+    },
+    "160": {
+      "Tension / Danger": 0.011950357142857141,
+      "Drama / Darkness": 0.032741071428571425,
+      "Positive / Uplifting": 0.011429126984126983,
+      "Contemplative": 0.022037380952380954
+    },
+    "161": {
+      "Tension / Danger": 0.0993031818181818,
+      "Drama / Darkness": 0.018242045454545455,
+      "Positive / Uplifting": 0.02000020202020202,
+      "Contemplative": 0.009142727272727275
+    },
+    "162": {
+      "Tension / Danger": 0.033732125,
+      "Drama / Darkness": 0.020015875,
+      "Positive / Uplifting": 0.00979472222222222,
+      "Contemplative": 0.03195858333333333
+    },
+    "163": {
+      "Tension / Danger": 0.023231785714285715,
+      "Drama / Darkness": 0.026413214285714286,
+      "Positive / Uplifting": 0.00861515873015873,
+      "Contemplative": 0.039629642857142856
+    },
+    "164": {
+      "Tension / Danger": 0.013316071428571429,
+      "Drama / Darkness": 0.010441607142857143,
+      "Positive / Uplifting": 0.019733253968253973,
+      "Contemplative": 0.03713845238095238
+    },
+    "165": {
+      "Tension / Danger": 0.026894999999999995,
+      "Drama / Darkness": 0.007012638888888889,
+      "Positive / Uplifting": 0.014607037037037038,
+      "Contemplative": 0.048219722222222226
+    },
+    "166": {
+      "Tension / Danger": 0.010630178571428573,
+      "Drama / Darkness": 0.024638928571428572,
+      "Positive / Uplifting": 0.0036766666666666666,
+      "Contemplative": 0.03924095238095239
+    },
+    "167": {
+      "Tension / Danger": 0.012837916666666666,
+      "Drama / Darkness": 0.020639027777777777,
+      "Positive / Uplifting": 0.012021234567901233,
+      "Contemplative": 0.03784249999999999
+    },
+    "168": {
+      "Tension / Danger": 0.038578068181818186,
+      "Drama / Darkness": 0.010159999999999999,
+      "Positive / Uplifting": 0.007617575757575758,
+      "Contemplative": 0.022686136363636367
+    },
+    "169": {
+      "Tension / Danger": 0.0326478125,
+      "Drama / Darkness": 0.035702187499999996,
+      "Positive / Uplifting": 0.004299305555555555,
+      "Contemplative": 0.02251041666666666
+    },
+    "170": {
+      "Tension / Danger": 0.01698385416666667,
+      "Drama / Darkness": 0.019424479166666665,
+      "Positive / Uplifting": 0.014008611111111114,
+      "Contemplative": 0.02678388888888889
+    },
+    "171": {
+      "Tension / Danger": 0.0335221875,
+      "Drama / Darkness": 0.0087759375,
+      "Positive / Uplifting": 0.009606597222222223,
+      "Contemplative": 0.02917989583333333
+    },
+    "172": {
+      "Tension / Danger": 0.01630625,
+      "Drama / Darkness": 0.010009875,
+      "Positive / Uplifting": 0.012463,
+      "Contemplative": 0.023120666666666664
+    },
+    "173": {
+      "Tension / Danger": 0.012835434782608698,
+      "Drama / Darkness": 0.011463369565217393,
+      "Positive / Uplifting": 0.021995024154589374,
+      "Contemplative": 0.03943260869565218
+    },
+    "174": {
+      "Tension / Danger": 0.029818333333333332,
+      "Drama / Darkness": 0.015231,
+      "Positive / Uplifting": 0.01236251851851852,
+      "Contemplative": 0.02751166666666667
+    },
+    "175": {
+      "Tension / Danger": 0.03479483333333334,
+      "Drama / Darkness": 0.023351166666666662,
+      "Positive / Uplifting": 0.016097185185185183,
+      "Contemplative": 0.018215777777777782
+    },
+    "176": {
+      "Tension / Danger": 0.02627961538461538,
+      "Drama / Darkness": 0.03244538461538461,
+      "Positive / Uplifting": 0.00489974358974359,
+      "Contemplative": 0.022656794871794873
+    },
+    "177": {
+      "Tension / Danger": 0.026033295454545458,
+      "Drama / Darkness": 0.01903590909090909,
+      "Positive / Uplifting": 0.008266767676767676,
+      "Contemplative": 0.03341
+    },
+    "178": {
+      "Tension / Danger": 0.0603725,
+      "Drama / Darkness": 0.023372500000000004,
+      "Positive / Uplifting": 0.005141604938271605,
+      "Contemplative": 0.027472592592592587
+    },
+    "179": {
+      "Tension / Danger": 0.036930199999999996,
+      "Drama / Darkness": 0.026182700000000003,
+      "Positive / Uplifting": 0.01364808888888889,
+      "Contemplative": 0.023254466666666668
+    },
+    "180": {
+      "Tension / Danger": 0.054925166666666664,
+      "Drama / Darkness": 0.015716666666666667,
+      "Positive / Uplifting": 0.012437851851851853,
+      "Contemplative": 0.01721288888888889
+    },
+    "181": {
+      "Tension / Danger": 0.023720735294117647,
+      "Drama / Darkness": 0.030050294117647057,
+      "Positive / Uplifting": 0.024924444444444447,
+      "Contemplative": 0.024274313725490205
+    },
+    "182": {
+      "Tension / Danger": 0.02762222222222222,
+      "Drama / Darkness": 0.030335694444444443,
+      "Positive / Uplifting": 0.017056604938271602,
+      "Contemplative": 0.03063259259259259
+    },
+    "183": {
+      "Tension / Danger": 0.036449821428571436,
+      "Drama / Darkness": 0.03185446428571429,
+      "Positive / Uplifting": 0.018075476190476197,
+      "Contemplative": 0.030228095238095238
+    },
+    "184": {
+      "Tension / Danger": 0.02728839285714286,
+      "Drama / Darkness": 0.013480892857142856,
+      "Positive / Uplifting": 0.008150793650793653,
+      "Contemplative": 0.03678964285714286
+    },
+    "185": {
+      "Tension / Danger": 0.010153235294117645,
+      "Drama / Darkness": 0.009642205882352942,
+      "Positive / Uplifting": 0.011193464052287582,
+      "Contemplative": 0.04218637254901959
+    },
+    "186": {
+      "Tension / Danger": 0.0341614705882353,
+      "Drama / Darkness": 0.023864999999999997,
+      "Positive / Uplifting": 0.010083790849673202,
+      "Contemplative": 0.020360196078431373
+    },
+    "187": {
+      "Tension / Danger": 0.012219166666666668,
+      "Drama / Darkness": 0.008523333333333332,
+      "Positive / Uplifting": 0.00827185185185185,
+      "Contemplative": 0.02034888888888889
+    },
+    "188": {
+      "Tension / Danger": 0.0230475,
+      "Drama / Darkness": 0.023276931818181815,
+      "Positive / Uplifting": 0.008610959595959597,
+      "Contemplative": 0.026965757575757573
+    },
+    "189": {
+      "Tension / Danger": 0.03353821428571428,
+      "Drama / Darkness": 0.02723630952380953,
+      "Positive / Uplifting": 0.004455661375661376,
+      "Contemplative": 0.03186269841269842
+    },
+    "190": {
+      "Tension / Danger": 0.03621291666666667,
+      "Drama / Darkness": 0.025140208333333334,
+      "Positive / Uplifting": 0.0044923148148148144,
+      "Contemplative": 0.01851833333333333
+    },
+    "191": {
+      "Tension / Danger": 0.046487099999999996,
+      "Drama / Darkness": 0.0218253,
+      "Positive / Uplifting": 0.010236222222222223,
+      "Contemplative": 0.03340273333333334
+    },
+    "192": {
+      "Tension / Danger": 0.030838461538461537,
+      "Drama / Darkness": 0.015012884615384615,
+      "Positive / Uplifting": 0.006692051282051283,
+      "Contemplative": 0.04112551282051281
+    },
+    "193": {
+      "Tension / Danger": 0.051484038461538456,
+      "Drama / Darkness": 0.011381730769230769,
+      "Positive / Uplifting": 0.014603504273504273,
+      "Contemplative": 0.03548641025641026
+    },
+    "194": {
+      "Tension / Danger": 0.043298260869565224,
+      "Drama / Darkness": 0.018840000000000003,
+      "Positive / Uplifting": 0.017267004830917875,
+      "Contemplative": 0.03518695652173913
+    },
+    "195": {
+      "Tension / Danger": 0.021033333333333334,
+      "Drama / Darkness": 0.008268333333333334,
+      "Positive / Uplifting": 0.002996296296296297,
+      "Contemplative": 0.03816222222222222
+    },
+    "196": {
+      "Tension / Danger": 0.0433475,
+      "Drama / Darkness": 0.020320000000000005,
+      "Positive / Uplifting": 0.011210518518518519,
+      "Contemplative": 0.04282211111111111
+    },
+    "197": {
+      "Tension / Danger": 0.02449617647058824,
+      "Drama / Darkness": 0.01771897058823529,
+      "Positive / Uplifting": 0.02276614379084967,
+      "Contemplative": 0.04360460784313726
+    },
+    "198": {
+      "Tension / Danger": 0.03368181818181819,
+      "Drama / Darkness": 0.011425454545454546,
+      "Positive / Uplifting": 0.015495555555555558,
+      "Contemplative": 0.038663787878787874
+    },
+    "199": {
+      "Tension / Danger": 0.04368328947368422,
+      "Drama / Darkness": 0.025633289473684213,
+      "Positive / Uplifting": 0.0039525146198830415,
+      "Contemplative": 0.03616175438596491
+    },
+    "200": {
+      "Tension / Danger": 0.04771263157894737,
+      "Drama / Darkness": 0.02153315789473684,
+      "Positive / Uplifting": 0.014092923976608187,
+      "Contemplative": 0.0327409649122807
+    },
+    "201": {
+      "Tension / Danger": 0.03509037499999999,
+      "Drama / Darkness": 0.013703874999999999,
+      "Positive / Uplifting": 0.03905561111111111,
+      "Contemplative": 0.024648416666666662
+    },
+    "202": {
+      "Tension / Danger": 0.031135416666666662,
+      "Drama / Darkness": 0.008573194444444444,
+      "Positive / Uplifting": 0.011633333333333334,
+      "Contemplative": 0.03932833333333335
+    },
+    "203": {
+      "Tension / Danger": 0.029819285714285708,
+      "Drama / Darkness": 0.03421154761904762,
+      "Positive / Uplifting": 0.008822328042328043,
+      "Contemplative": 0.0209984126984127
+    },
+    "204": {
+      "Tension / Danger": 0.054739545454545464,
+      "Drama / Darkness": 0.02260113636363636,
+      "Positive / Uplifting": 0.03324808080808081,
+      "Contemplative": 0.03178560606060606
+    },
+    "205": {
+      "Tension / Danger": 0.078045,
+      "Drama / Darkness": 0.00990975,
+      "Positive / Uplifting": 0.010069999999999999,
+      "Contemplative": 0.0322015
+    },
+    "206": {
+      "Tension / Danger": 0.06254866666666667,
+      "Drama / Darkness": 0.02690783333333333,
+      "Positive / Uplifting": 0.007183851851851851,
+      "Contemplative": 0.027598666666666667
+    },
+    "207": {
+      "Tension / Danger": 0.021815441176470586,
+      "Drama / Darkness": 0.022402647058823527,
+      "Positive / Uplifting": 0.01850686274509804,
+      "Contemplative": 0.03799980392156863
+    },
+    "208": {
+      "Tension / Danger": 0.02093980769230769,
+      "Drama / Darkness": 0.011341057692307695,
+      "Positive / Uplifting": 0.019647991452991457,
+      "Contemplative": 0.036710000000000007
+    },
+    "209": {
+      "Tension / Danger": 0.0296475,
+      "Drama / Darkness": 0.01116519230769231,
+      "Positive / Uplifting": 0.013843247863247863,
+      "Contemplative": 0.03406230769230768
+    },
+    "210": {
+      "Tension / Danger": 0.03360220588235294,
+      "Drama / Darkness": 0.035135882352941177,
+      "Positive / Uplifting": 0.004685032679738562,
+      "Contemplative": 0.03101480392156863
+    },
+    "211": {
+      "Tension / Danger": 0.02841464285714286,
+      "Drama / Darkness": 0.012154285714285715,
+      "Positive / Uplifting": 0.010756719576719576,
+      "Contemplative": 0.04366666666666666
+    },
+    "212": {
+      "Tension / Danger": 0.059406458333333335,
+      "Drama / Darkness": 0.0364775,
+      "Positive / Uplifting": 0.009461574074074077,
+      "Contemplative": 0.032863472222222224
+    },
+    "213": {
+      "Tension / Danger": 0.03426708333333333,
+      "Drama / Darkness": 0.042594999999999994,
+      "Positive / Uplifting": 0.014864444444444444,
+      "Contemplative": 0.015205555555555552
+    },
+    "214": {
+      "Tension / Danger": 0.03584104166666666,
+      "Drama / Darkness": 0.01906729166666667,
+      "Positive / Uplifting": 0.02962129629629629,
+      "Contemplative": 0.018444166666666668
+    },
+    "215": {
+      "Tension / Danger": 0.04002232142857143,
+      "Drama / Darkness": 0.013784821428571428,
+      "Positive / Uplifting": 0.029520476190476194,
+      "Contemplative": 0.014425714285714285
+    },
+    "216": {
+      "Tension / Danger": 0.01592826923076923,
+      "Drama / Darkness": 0.039632307692307696,
+      "Positive / Uplifting": 0.004156068376068378,
+      "Contemplative": 0.017926794871794875
+    },
+    "217": {
+      "Tension / Danger": 0.02615525,
+      "Drama / Darkness": 0.025474249999999997,
+      "Positive / Uplifting": 0.012349777777777777,
+      "Contemplative": 0.03789308333333333
+    },
+    "218": {
+      "Tension / Danger": 0.024558970588235297,
+      "Drama / Darkness": 0.024518382352941178,
+      "Positive / Uplifting": 0.006461633986928105,
+      "Contemplative": 0.04643813725490197
+    },
+    "219": {
+      "Tension / Danger": 0.029466428571428567,
+      "Drama / Darkness": 0.012410000000000001,
+      "Positive / Uplifting": 0.011614841269841266,
+      "Contemplative": 0.01944761904761905
+    },
+    "220": {
+      "Tension / Danger": 0.022688333333333335,
+      "Drama / Darkness": 0.006935555555555556,
+      "Positive / Uplifting": 0.026814259259259256,
+      "Contemplative": 0.028139999999999995
+    },
+    "221": {
+      "Tension / Danger": 0.013997692307692306,
+      "Drama / Darkness": 0.02513692307692308,
+      "Positive / Uplifting": 0.018957179487179482,
+      "Contemplative": 0.046059358974358984
+    },
+    "222": {
+      "Tension / Danger": 0.033468333333333336,
+      "Drama / Darkness": 0.018170972222222224,
+      "Positive / Uplifting": 0.012321604938271604,
+      "Contemplative": 0.019984537037037037
+    },
+    "223": {
+      "Tension / Danger": 0.027201710526315787,
+      "Drama / Darkness": 0.009921578947368422,
+      "Positive / Uplifting": 0.03181824561403509,
+      "Contemplative": 0.04087122807017544
+    },
+    "224": {
+      "Tension / Danger": 0.0393140625,
+      "Drama / Darkness": 0.023693125000000002,
+      "Positive / Uplifting": 0.006314652777777778,
+      "Contemplative": 0.024466354166666666
+    },
+    "225": {
+      "Tension / Danger": 0.03076926470588235,
+      "Drama / Darkness": 0.01974794117647059,
+      "Positive / Uplifting": 0.0024826797385620915,
+      "Contemplative": 0.05139098039215686
+    },
+    "226": {
+      "Tension / Danger": 0.01731181818181818,
+      "Drama / Darkness": 0.006762045454545455,
+      "Positive / Uplifting": 0.01545060606060606,
+      "Contemplative": 0.04273924242424243
+    },
+    "227": {
+      "Tension / Danger": 0.020565625,
+      "Drama / Darkness": 0.053575208333333325,
+      "Positive / Uplifting": 0.024471111111111107,
+      "Contemplative": 0.0175325
+    },
+    "228": {
+      "Tension / Danger": 0.03703308823529412,
+      "Drama / Darkness": 0.04598235294117646,
+      "Positive / Uplifting": 0.007591699346405229,
+      "Contemplative": 0.02901196078431373
+    },
+    "229": {
+      "Tension / Danger": 0.028223750000000002,
+      "Drama / Darkness": 0.015113999999999999,
+      "Positive / Uplifting": 0.008403222222222223,
+      "Contemplative": 0.024056166666666667
+    },
+    "230": {
+      "Tension / Danger": 0.0330959375,
+      "Drama / Darkness": 0.030581093750000003,
+      "Positive / Uplifting": 0.009785277777777776,
+      "Contemplative": 0.02662197916666666
+    },
+    "231": {
+      "Tension / Danger": 0.027220526315789476,
+      "Drama / Darkness": 0.009940526315789473,
+      "Positive / Uplifting": 0.01983011695906433,
+      "Contemplative": 0.02619833333333333
+    },
+    "232": {
+      "Tension / Danger": 0.00621909090909091,
+      "Drama / Darkness": 0.018555227272727272,
+      "Positive / Uplifting": 0.023444040404040405,
+      "Contemplative": 0.02058742424242424
+    },
+    "233": {
+      "Tension / Danger": 0.04856649999999999,
+      "Drama / Darkness": 0.046623000000000005,
+      "Positive / Uplifting": 0.014221629629629631,
+      "Contemplative": 0.03535155555555556
+    },
+    "234": {
+      "Tension / Danger": 0.03440203125,
+      "Drama / Darkness": 0.045628125000000005,
+      "Positive / Uplifting": 0.007025,
+      "Contemplative": 0.025240520833333335
+    },
+    "235": {
+      "Tension / Danger": 0.026559499999999996,
+      "Drama / Darkness": 0.019416,
+      "Positive / Uplifting": 0.031372111111111115,
+      "Contemplative": 0.02141483333333333
+    },
+    "236": {
+      "Tension / Danger": 0.023781111111111107,
+      "Drama / Darkness": 0.03247333333333333,
+      "Positive / Uplifting": 0.02224679012345679,
+      "Contemplative": 0.0322261111111111
+    },
+    "237": {
+      "Tension / Danger": 0.02616964285714286,
+      "Drama / Darkness": 0.03895214285714285,
+      "Positive / Uplifting": 0.015402751322751323,
+      "Contemplative": 0.029422857142857146
+    },
+    "238": {
+      "Tension / Danger": 0.045369999999999994,
+      "Drama / Darkness": 0.02921840909090909,
+      "Positive / Uplifting": 0.004524646464646465,
+      "Contemplative": 0.03648181818181818
+    },
+    "239": {
+      "Tension / Danger": 0.04931176470588235,
+      "Drama / Darkness": 0.01523779411764706,
+      "Positive / Uplifting": 0.013773660130718955,
+      "Contemplative": 0.029214901960784308
+    },
+    "240": {
+      "Tension / Danger": 0.041657058823529415,
+      "Drama / Darkness": 0.01929279411764706,
+      "Positive / Uplifting": 0.013619738562091505,
+      "Contemplative": 0.025437549019607847
+    },
+    "241": {
+      "Tension / Danger": 0.034150681818181816,
+      "Drama / Darkness": 0.0071248863636363645,
+      "Positive / Uplifting": 0.011193484848484848,
+      "Contemplative": 0.031228409090909088
+    },
+    "242": {
+      "Tension / Danger": 0.040918863636363635,
+      "Drama / Darkness": 0.007918863636363637,
+      "Positive / Uplifting": 0.002944040404040404,
+      "Contemplative": 0.029442272727272727
+    },
+    "243": {
+      "Tension / Danger": 0.036069531249999995,
+      "Drama / Darkness": 0.01898078125,
+      "Positive / Uplifting": 0.004533472222222222,
+      "Contemplative": 0.023175937500000004
+    },
+    "244": {
+      "Tension / Danger": 0.022599852941176474,
+      "Drama / Darkness": 0.01917676470588235,
+      "Positive / Uplifting": 0.005124117647058823,
+      "Contemplative": 0.027343921568627444
+    },
+    "245": {
+      "Tension / Danger": 0.01781111111111111,
+      "Drama / Darkness": 0.021044722222222218,
+      "Positive / Uplifting": 0.012477098765432099,
+      "Contemplative": 0.038063518518518524
+    },
+    "246": {
+      "Tension / Danger": 0.0232605,
+      "Drama / Darkness": 0.010526,
+      "Positive / Uplifting": 0.02357748148148148,
+      "Contemplative": 0.035659222222222224
+    },
+    "247": {
+      "Tension / Danger": 0.067969375,
+      "Drama / Darkness": 0.008077083333333334,
+      "Positive / Uplifting": 0.020844444444444443,
+      "Contemplative": 0.02642861111111111
+    },
+    "248": {
+      "Tension / Danger": 0.04738041666666667,
+      "Drama / Darkness": 0.009783749999999999,
+      "Positive / Uplifting": 0.017262129629629627,
+      "Contemplative": 0.02395291666666667
+    },
+    "249": {
+      "Tension / Danger": 0.019191249999999997,
+      "Drama / Darkness": 0.018846785714285715,
+      "Positive / Uplifting": 0.022805396825396826,
+      "Contemplative": 0.017507976190476195
+    },
+    "250": {
+      "Tension / Danger": 0.01796178571428572,
+      "Drama / Darkness": 0.025580357142857144,
+      "Positive / Uplifting": 0.011097142857142856,
+      "Contemplative": 0.02529047619047619
+    },
+    "251": {
+      "Tension / Danger": 0.02356485294117647,
+      "Drama / Darkness": 0.02321014705882353,
+      "Positive / Uplifting": 0.02145156862745098,
+      "Contemplative": 0.01778470588235294
+    },
+    "252": {
+      "Tension / Danger": 0.03985678571428571,
+      "Drama / Darkness": 0.051813035714285714,
+      "Positive / Uplifting": 0.016136587301587298,
+      "Contemplative": 0.017066904761904762
+    },
+    "253": {
+      "Tension / Danger": 0.06313766666666666,
+      "Drama / Darkness": 0.019706833333333337,
+      "Positive / Uplifting": 0.006729037037037036,
+      "Contemplative": 0.025873555555555556
+    },
+    "254": {
+      "Tension / Danger": 0.04764410714285715,
+      "Drama / Darkness": 0.03395178571428571,
+      "Positive / Uplifting": 0.005158888888888889,
+      "Contemplative": 0.023130714285714282
+    },
+    "255": {
+      "Tension / Danger": 0.04121263157894737,
+      "Drama / Darkness": 0.014177499999999997,
+      "Positive / Uplifting": 0.015314678362573098,
+      "Contemplative": 0.028590789473684215
+    },
+    "256": {
+      "Tension / Danger": 0.051113690476190486,
+      "Drama / Darkness": 0.017241666666666662,
+      "Positive / Uplifting": 0.010512063492063491,
+      "Contemplative": 0.04619563492063493
+    },
+    "257": {
+      "Tension / Danger": 0.06404458333333334,
+      "Drama / Darkness": 0.04323236111111111,
+      "Positive / Uplifting": 0.00641320987654321,
+      "Contemplative": 0.019657499999999994
+    },
+    "258": {
+      "Tension / Danger": 0.04905442307692308,
+      "Drama / Darkness": 0.025539230769230765,
+      "Positive / Uplifting": 0.009299059829059835,
+      "Contemplative": 0.027802948717948722
+    },
+    "259": {
+      "Tension / Danger": 0.022783281250000002,
+      "Drama / Darkness": 0.041371875,
+      "Positive / Uplifting": 0.011415833333333332,
+      "Contemplative": 0.03147072916666666
+    },
+    "260": {
+      "Tension / Danger": 0.02472722222222222,
+      "Drama / Darkness": 0.024136527777777778,
+      "Positive / Uplifting": 0.010192592592592593,
+      "Contemplative": 0.034117314814814816
+    },
+    "261": {
+      "Tension / Danger": 0.03930550000000001,
+      "Drama / Darkness": 0.02052775,
+      "Positive / Uplifting": 0.00668288888888889,
+      "Contemplative": 0.023983499999999998
+    },
+    "262": {
+      "Tension / Danger": 0.04009733333333333,
+      "Drama / Darkness": 0.045782833333333335,
+      "Positive / Uplifting": 0.0069997777777777775,
+      "Contemplative": 0.018470777777777777
+    },
+    "263": {
+      "Tension / Danger": 0.09628,
+      "Drama / Darkness": 0.02531116666666667,
+      "Positive / Uplifting": 0.0034660000000000003,
+      "Contemplative": 0.030477111111111115
+    },
+    "264": {
+      "Tension / Danger": 0.02875955357142857,
+      "Drama / Darkness": 0.019596785714285716,
+      "Positive / Uplifting": 0.006436944444444444,
+      "Contemplative": 0.03830416666666667
+    },
+    "265": {
+      "Tension / Danger": 0.0438784375,
+      "Drama / Darkness": 0.02023984375,
+      "Positive / Uplifting": 0.021498888888888887,
+      "Contemplative": 0.04136447916666666
+    },
+    "266": {
+      "Tension / Danger": 0.016592282608695653,
+      "Drama / Darkness": 0.034097499999999996,
+      "Positive / Uplifting": 0.02683357487922705,
+      "Contemplative": 0.026840724637681158
+    },
+    "267": {
+      "Tension / Danger": 0.04663294117647059,
+      "Drama / Darkness": 0.028519558823529412,
+      "Positive / Uplifting": 0.005394771241830066,
+      "Contemplative": 0.030603333333333337
+    },
+    "268": {
+      "Tension / Danger": 0.037589700000000004,
+      "Drama / Darkness": 0.010586800000000002,
+      "Positive / Uplifting": 0.006689066666666665,
+      "Contemplative": 0.034520866666666664
+    },
+    "269": {
+      "Tension / Danger": 0.03896500000000001,
+      "Drama / Darkness": 0.009102187500000001,
+      "Positive / Uplifting": 0.024829027777777776,
+      "Contemplative": 0.033556111111111106
+    },
+    "270": {
+      "Tension / Danger": 0.037855795454545454,
+      "Drama / Darkness": 0.01516,
+      "Positive / Uplifting": 0.018571616161616164,
+      "Contemplative": 0.034791666666666665
+    },
+    "271": {
+      "Tension / Danger": 0.05200553571428571,
+      "Drama / Darkness": 0.044224285714285716,
+      "Positive / Uplifting": 0.0055438095238095255,
+      "Contemplative": 0.023339404761904763
+    },
+    "272": {
+      "Tension / Danger": 0.08326343750000001,
+      "Drama / Darkness": 0.02716390625,
+      "Positive / Uplifting": 0.006101319444444444,
+      "Contemplative": 0.025293437499999998
+    },
+    "273": {
+      "Tension / Danger": 0.06629305555555555,
+      "Drama / Darkness": 0.008624027777777777,
+      "Positive / Uplifting": 0.003116481481481481,
+      "Contemplative": 0.03611157407407407
+    },
+    "274": {
+      "Tension / Danger": 0.05495596153846154,
+      "Drama / Darkness": 0.02693980769230769,
+      "Positive / Uplifting": 0.004799230769230769,
+      "Contemplative": 0.03274679487179487
+    },
+    "275": {
+      "Tension / Danger": 0.022396309523809527,
+      "Drama / Darkness": 0.024369404761904762,
+      "Positive / Uplifting": 0.0038948148148148154,
+      "Contemplative": 0.04937436507936508
+    },
+    "276": {
+      "Tension / Danger": 0.026945,
+      "Drama / Darkness": 0.051404807692307694,
+      "Positive / Uplifting": 0.004678119658119658,
+      "Contemplative": 0.01658448717948718
+    },
+    "277": {
+      "Tension / Danger": 0.031840462962962966,
+      "Drama / Darkness": 0.010648333333333334,
+      "Positive / Uplifting": 0.015240658436213991,
+      "Contemplative": 0.032452283950617285
+    },
+    "278": {
+      "Tension / Danger": 0.03593749999999999,
+      "Drama / Darkness": 0.009566190476190478,
+      "Positive / Uplifting": 0.0032077777777777777,
+      "Contemplative": 0.03579896825396825
+    },
+    "279": {
+      "Tension / Danger": 0.023082500000000002,
+      "Drama / Darkness": 0.00963513888888889,
+      "Positive / Uplifting": 0.00646135802469136,
+      "Contemplative": 0.021486574074074075
+    },
+    "280": {
+      "Tension / Danger": 0.036018461538461534,
+      "Drama / Darkness": 0.01611480769230769,
+      "Positive / Uplifting": 0.002882905982905982,
+      "Contemplative": 0.02446602564102564
+    },
+    "281": {
+      "Tension / Danger": 0.02608775,
+      "Drama / Darkness": 0.011459124999999999,
+      "Positive / Uplifting": 0.014443444444444443,
+      "Contemplative": 0.02627183333333333
+    },
+    "282": {
+      "Tension / Danger": 0.07059,
+      "Drama / Darkness": 0.03168571428571428,
+      "Positive / Uplifting": 0.003940238095238094,
+      "Contemplative": 0.026733571428571426
+    },
+    "283": {
+      "Tension / Danger": 0.09203125,
+      "Drama / Darkness": 0.0172,
+      "Positive / Uplifting": 0.007238111111111112,
+      "Contemplative": 0.021765166666666665
+    },
+    "284": {
+      "Tension / Danger": 0.04849337499999999,
+      "Drama / Darkness": 0.017422625,
+      "Positive / Uplifting": 0.011007,
+      "Contemplative": 0.03694925
+    },
+    "285": {
+      "Tension / Danger": 0.06073514705882352,
+      "Drama / Darkness": 0.01353955882352941,
+      "Positive / Uplifting": 0.010052091503267975,
+      "Contemplative": 0.023825490196078433
+    },
+    "286": {
+      "Tension / Danger": 0.05003272727272727,
+      "Drama / Darkness": 0.02794363636363636,
+      "Positive / Uplifting": 0.009154747474747474,
+      "Contemplative": 0.02517530303030303
+    },
+    "287": {
+      "Tension / Danger": 0.07430375,
+      "Drama / Darkness": 0.016059166666666666,
+      "Positive / Uplifting": 0.005553518518518518,
+      "Contemplative": 0.035658333333333334
+    },
+    "288": {
+      "Tension / Danger": 0.049612,
+      "Drama / Darkness": 0.005222,
+      "Positive / Uplifting": 0.0030855555555555554,
+      "Contemplative": 0.03519177777777778
+    },
+    "289": {
+      "Tension / Danger": 0.03882153846153846,
+      "Drama / Darkness": 0.017284038461538462,
+      "Positive / Uplifting": 0.0053476068376068385,
+      "Contemplative": 0.02882153846153846
+    },
+    "290": {
+      "Tension / Danger": 0.02488083333333333,
+      "Drama / Darkness": 0.01892333333333333,
+      "Positive / Uplifting": 0.013555767195767194,
+      "Contemplative": 0.02932746031746032
+    },
+    "291": {
+      "Tension / Danger": 0.031650657894736846,
+      "Drama / Darkness": 0.03014907894736842,
+      "Positive / Uplifting": 0.00613251461988304,
+      "Contemplative": 0.01941008771929825
+    },
+    "292": {
+      "Tension / Danger": 0.06621064814814813,
+      "Drama / Darkness": 0.028347685185185184,
+      "Positive / Uplifting": 0.005145761316872428,
+      "Contemplative": 0.022658086419753084
+    },
+    "293": {
+      "Tension / Danger": 0.049481300000000006,
+      "Drama / Darkness": 0.029817100000000006,
+      "Positive / Uplifting": 0.005125244444444445,
+      "Contemplative": 0.030947266666666664
+    },
+    "294": {
+      "Tension / Danger": 0.09027222222222224,
+      "Drama / Darkness": 0.034707777777777775,
+      "Positive / Uplifting": 0.012306419753086422,
+      "Contemplative": 0.010615555555555555
+    },
+    "295": {
+      "Tension / Danger": 0.045919,
+      "Drama / Darkness": 0.026238499999999998,
+      "Positive / Uplifting": 0.005661833333333333,
+      "Contemplative": 0.04466108333333333
+    },
+    "296": {
+      "Tension / Danger": 0.05115666666666666,
+      "Drama / Darkness": 0.023584333333333336,
+      "Positive / Uplifting": 0.003737111111111111,
+      "Contemplative": 0.029426666666666663
+    },
+    "297": {
+      "Tension / Danger": 0.0224334,
+      "Drama / Darkness": 0.009996800000000002,
+      "Positive / Uplifting": 0.014279288888888889,
+      "Contemplative": 0.05017353333333334
+    },
+    "298": {
+      "Tension / Danger": 0.04126466666666666,
+      "Drama / Darkness": 0.011621833333333331,
+      "Positive / Uplifting": 0.005808444444444445,
+      "Contemplative": 0.025831444444444445
+    },
+    "299": {
+      "Tension / Danger": 0.04373055555555556,
+      "Drama / Darkness": 0.0316625,
+      "Positive / Uplifting": 0.0056696296296296295,
+      "Contemplative": 0.02260777777777778
+    },
+    "300": {
+      "Tension / Danger": 0.020321625,
+      "Drama / Darkness": 0.0199115,
+      "Positive / Uplifting": 0.0033765555555555554,
+      "Contemplative": 0.033656
+    },
+    "301": {
+      "Tension / Danger": 0.04187444444444445,
+      "Drama / Darkness": 0.015691666666666666,
+      "Positive / Uplifting": 0.007874567901234567,
+      "Contemplative": 0.03867416666666666
+    },
+    "302": {
+      "Tension / Danger": 0.046780625,
+      "Drama / Darkness": 0.027136458333333335,
+      "Positive / Uplifting": 0.01807666666666667,
+      "Contemplative": 0.022591944444444442
+    },
+    "303": {
+      "Tension / Danger": 0.031784772727272724,
+      "Drama / Darkness": 0.02038034090909091,
+      "Positive / Uplifting": 0.02113828282828283,
+      "Contemplative": 0.03508621212121212
+    },
+    "304": {
+      "Tension / Danger": 0.039728875000000004,
+      "Drama / Darkness": 0.021504125000000002,
+      "Positive / Uplifting": 0.02256755555555556,
+      "Contemplative": 0.027189916666666664
+    },
+    "305": {
+      "Tension / Danger": 0.049021805555555555,
+      "Drama / Darkness": 0.04206513888888889,
+      "Positive / Uplifting": 0.008419197530864198,
+      "Contemplative": 0.025020555555555556
+    },
+    "306": {
+      "Tension / Danger": 0.04000434210526316,
+      "Drama / Darkness": 0.03251802631578947,
+      "Positive / Uplifting": 0.003927485380116959,
+      "Contemplative": 0.03490824561403509
+    },
+    "307": {
+      "Tension / Danger": 0.05444325,
+      "Drama / Darkness": 0.02352375,
+      "Positive / Uplifting": 0.010036666666666662,
+      "Contemplative": 0.025883666666666662
+    },
+    "308": {
+      "Tension / Danger": 0.031501375000000005,
+      "Drama / Darkness": 0.007824125,
+      "Positive / Uplifting": 0.013691777777777778,
+      "Contemplative": 0.029059333333333336
+    },
+    "309": {
+      "Tension / Danger": 0.024870625,
+      "Drama / Darkness": 0.025655625,
+      "Positive / Uplifting": 0.003979444444444444,
+      "Contemplative": 0.02823447916666667
+    },
+    "310": {
+      "Tension / Danger": 0.023084444444444446,
+      "Drama / Darkness": 0.010506250000000002,
+      "Positive / Uplifting": 0.0087579012345679,
+      "Contemplative": 0.022928055555555556
+    },
+    "311": {
+      "Tension / Danger": 0.030346136363636363,
+      "Drama / Darkness": 0.0074902272727272725,
+      "Positive / Uplifting": 0.010608787878787879,
+      "Contemplative": 0.03498924242424243
+    },
+    "312": {
+      "Tension / Danger": 0.027814473684210535,
+      "Drama / Darkness": 0.01820078947368421,
+      "Positive / Uplifting": 0.02095111111111111,
+      "Contemplative": 0.017503070175438597
+    },
+    "313": {
+      "Tension / Danger": 0.039148392857142854,
+      "Drama / Darkness": 0.012130357142857142,
+      "Positive / Uplifting": 0.009323412698412699,
+      "Contemplative": 0.04184833333333334
+    },
+    "314": {
+      "Tension / Danger": 0.019126428571428572,
+      "Drama / Darkness": 0.01378660714285714,
+      "Positive / Uplifting": 0.012778095238095236,
+      "Contemplative": 0.032579761904761896
+    },
+    "315": {
+      "Tension / Danger": 0.03909236842105263,
+      "Drama / Darkness": 0.009392368421052632,
+      "Positive / Uplifting": 0.009983333333333334,
+      "Contemplative": 0.017641491228070176
+    },
+    "316": {
+      "Tension / Danger": 0.04896933333333333,
+      "Drama / Darkness": 0.015633666666666664,
+      "Positive / Uplifting": 0.004698074074074073,
+      "Contemplative": 0.03204366666666667
+    },
+    "317": {
+      "Tension / Danger": 0.02582407894736842,
+      "Drama / Darkness": 0.01416065789473684,
+      "Positive / Uplifting": 0.011090643274853804,
+      "Contemplative": 0.03727315789473685
+    },
+    "318": {
+      "Tension / Danger": 0.073904,
+      "Drama / Darkness": 0.040815875,
+      "Positive / Uplifting": 0.005450722222222222,
+      "Contemplative": 0.028262833333333334
+    },
+    "319": {
+      "Tension / Danger": 0.07803102941176468,
+      "Drama / Darkness": 0.025643970588235296,
+      "Positive / Uplifting": 0.009948169934640523,
+      "Contemplative": 0.03492303921568627
+    },
+    "320": {
+      "Tension / Danger": 0.03471381578947369,
+      "Drama / Darkness": 0.020383026315789473,
+      "Positive / Uplifting": 0.014238304093567253,
+      "Contemplative": 0.02730885964912281
+    },
+    "321": {
+      "Tension / Danger": 0.033971875,
+      "Drama / Darkness": 0.049905,
+      "Positive / Uplifting": 0.005096666666666666,
+      "Contemplative": 0.04039
+    },
+    "322": {
+      "Tension / Danger": 0.04536175,
+      "Drama / Darkness": 0.013187375000000001,
+      "Positive / Uplifting": 0.008270444444444445,
+      "Contemplative": 0.06169966666666667
+    },
+    "323": {
+      "Tension / Danger": 0.05163000000000001,
+      "Drama / Darkness": 0.009825416666666668,
+      "Positive / Uplifting": 0.003409814814814814,
+      "Contemplative": 0.054012083333333336
+    },
+    "324": {
+      "Tension / Danger": 0.0386,
+      "Drama / Darkness": 0.015504,
+      "Positive / Uplifting": 0.005223111111111111,
+      "Contemplative": 0.04462683333333333
+    },
+    "325": {
+      "Tension / Danger": 0.015468823529411767,
+      "Drama / Darkness": 0.020484264705882355,
+      "Positive / Uplifting": 0.005797712418300653,
+      "Contemplative": 0.024399607843137255
+    },
+    "326": {
+      "Tension / Danger": 0.04167214285714286,
+      "Drama / Darkness": 0.013552857142857144,
+      "Positive / Uplifting": 0.006392539682539681,
+      "Contemplative": 0.026842261904761903
+    },
+    "327": {
+      "Tension / Danger": 0.023121666666666665,
+      "Drama / Darkness": 0.04192361111111112,
+      "Positive / Uplifting": 0.007713888888888888,
+      "Contemplative": 0.04169805555555556
+    },
+    "328": {
+      "Tension / Danger": 0.02248375,
+      "Drama / Darkness": 0.015754895833333334,
+      "Positive / Uplifting": 0.016121157407407407,
+      "Contemplative": 0.04113722222222222
+    },
+    "329": {
+      "Tension / Danger": 0.037164473684210525,
+      "Drama / Darkness": 0.03300210526315789,
+      "Positive / Uplifting": 0.0029631578947368416,
+      "Contemplative": 0.028476052631578944
+    },
+    "330": {
+      "Tension / Danger": 0.04578285714285714,
+      "Drama / Darkness": 0.058123571428571434,
+      "Positive / Uplifting": 0.00856952380952381,
+      "Contemplative": 0.02471761904761905
+    },
+    "331": {
+      "Tension / Danger": 0.03957488636363637,
+      "Drama / Darkness": 0.026553522727272728,
+      "Positive / Uplifting": 0.011084747474747476,
+      "Contemplative": 0.025819166666666667
+    },
+    "332": {
+      "Tension / Danger": 0.03680855263157895,
+      "Drama / Darkness": 0.038879342105263164,
+      "Positive / Uplifting": 0.017199941520467832,
+      "Contemplative": 0.02229236842105263
+    },
+    "333": {
+      "Tension / Danger": 0.037070625,
+      "Drama / Darkness": 0.04414604166666667,
+      "Positive / Uplifting": 0.012835648148148148,
+      "Contemplative": 0.04253013888888889
+    },
+    "334": {
+      "Tension / Danger": 0.03423930555555556,
+      "Drama / Darkness": 0.03784805555555556,
+      "Positive / Uplifting": 0.014481358024691358,
+      "Contemplative": 0.05680462962962963
+    },
+    "335": {
+      "Tension / Danger": 0.03690533333333334,
+      "Drama / Darkness": 0.02543166666666667,
+      "Positive / Uplifting": 0.0055738518518518515,
+      "Contemplative": 0.036995444444444435
+    },
+    "336": {
+      "Tension / Danger": 0.06114937499999999,
+      "Drama / Darkness": 0.03106703125,
+      "Positive / Uplifting": 0.009752777777777779,
+      "Contemplative": 0.036235104166666664
+    },
+    "337": {
+      "Tension / Danger": 0.07460910714285715,
+      "Drama / Darkness": 0.02900214285714286,
+      "Positive / Uplifting": 0.00598968253968254,
+      "Contemplative": 0.031392380952380956
+    },
+    "338": {
+      "Tension / Danger": 0.04792538461538462,
+      "Drama / Darkness": 0.050616538461538456,
+      "Positive / Uplifting": 0.012291623931623932,
+      "Contemplative": 0.019167564102564105
+    },
+    "339": {
+      "Tension / Danger": 0.026202265625,
+      "Drama / Darkness": 0.01836640625,
+      "Positive / Uplifting": 0.005705555555555555,
+      "Contemplative": 0.05596010416666666
+    },
+    "340": {
+      "Tension / Danger": 0.025777083333333336,
+      "Drama / Darkness": 0.053430000000000005,
+      "Positive / Uplifting": 0.007979444444444447,
+      "Contemplative": 0.029232499999999995
+    },
+    "341": {
+      "Tension / Danger": 0.03226363636363637,
+      "Drama / Darkness": 0.009706363636363636,
+      "Positive / Uplifting": 0.012230303030303029,
+      "Contemplative": 0.0465119696969697
+    },
+    "342": {
+      "Tension / Danger": 0.029100595238095234,
+      "Drama / Darkness": 0.03619880952380952,
+      "Positive / Uplifting": 0.0031625396825396826,
+      "Contemplative": 0.02184706349206349
+    },
+    "343": {
+      "Tension / Danger": 0.028623500000000003,
+      "Drama / Darkness": 0.005391999999999999,
+      "Positive / Uplifting": 0.002065,
+      "Contemplative": 0.03881400000000001
+    },
+    "344": {
+      "Tension / Danger": 0.04009517857142857,
+      "Drama / Darkness": 0.017445,
+      "Positive / Uplifting": 0.018355952380952383,
+      "Contemplative": 0.025397619047619047
+    },
+    "345": {
+      "Tension / Danger": 0.02466464285714286,
+      "Drama / Darkness": 0.01307452380952381,
+      "Positive / Uplifting": 0.004992857142857143,
+      "Contemplative": 0.021863174603174607
+    },
+    "346": {
+      "Tension / Danger": 0.02241979166666667,
+      "Drama / Darkness": 0.018053333333333334,
+      "Positive / Uplifting": 0.0075975,
+      "Contemplative": 0.02410138888888889
+    },
+    "347": {
+      "Tension / Danger": 0.04059339285714286,
+      "Drama / Darkness": 0.02701589285714286,
+      "Positive / Uplifting": 0.009964206349206353,
+      "Contemplative": 0.02665214285714286
+    },
+    "348": {
+      "Tension / Danger": 0.049275,
+      "Drama / Darkness": 0.023526785714285712,
+      "Positive / Uplifting": 0.030014444444444444,
+      "Contemplative": 0.02450559523809524
+    },
+    "349": {
+      "Tension / Danger": 0.03381039473684211,
+      "Drama / Darkness": 0.0075909210526315775,
+      "Positive / Uplifting": 0.007787309941520467,
+      "Contemplative": 0.028071754385964914
+    },
+    "350": {
+      "Tension / Danger": 0.03939297619047619,
+      "Drama / Darkness": 0.022023690476190478,
+      "Positive / Uplifting": 0.0041488888888888895,
+      "Contemplative": 0.0262431746031746
+    },
+    "351": {
+      "Tension / Danger": 0.03468444444444444,
+      "Drama / Darkness": 0.031713333333333336,
+      "Positive / Uplifting": 0.011310925925925926,
+      "Contemplative": 0.04491324074074074
+    },
+    "352": {
+      "Tension / Danger": 0.04321013157894736,
+      "Drama / Darkness": 0.03861736842105263,
+      "Positive / Uplifting": 0.016363508771929824,
+      "Contemplative": 0.023432631578947368
+    },
+    "353": {
+      "Tension / Danger": 0.06082136363636363,
+      "Drama / Darkness": 0.022953068181818182,
+      "Positive / Uplifting": 0.002857323232323232,
+      "Contemplative": 0.03342151515151515
+    },
+    "354": {
+      "Tension / Danger": 0.06309763157894738,
+      "Drama / Darkness": 0.03963223684210526,
+      "Positive / Uplifting": 0.004080994152046784,
+      "Contemplative": 0.027887192982456142
+    },
+    "355": {
+      "Tension / Danger": 0.06452035714285713,
+      "Drama / Darkness": 0.01194107142857143,
+      "Positive / Uplifting": 0.004352698412698412,
+      "Contemplative": 0.03418238095238096
+    },
+    "356": {
+      "Tension / Danger": 0.06564444444444445,
+      "Drama / Darkness": 0.05303444444444445,
+      "Positive / Uplifting": 0.0041324074074074076,
+      "Contemplative": 0.01453601851851852
+    },
+    "357": {
+      "Tension / Danger": 0.05553363636363637,
+      "Drama / Darkness": 0.023462272727272727,
+      "Positive / Uplifting": 0.010671414141414141,
+      "Contemplative": 0.024084545454545456
+    },
+    "358": {
+      "Tension / Danger": 0.03720636363636364,
+      "Drama / Darkness": 0.009964318181818182,
+      "Positive / Uplifting": 0.008600656565656563,
+      "Contemplative": 0.028792803030303033
+    },
+    "359": {
+      "Tension / Danger": 0.059515000000000005,
+      "Drama / Darkness": 0.021770124999999998,
+      "Positive / Uplifting": 0.006509055555555555,
+      "Contemplative": 0.030022749999999997
+    },
+    "360": {
+      "Tension / Danger": 0.040117187500000005,
+      "Drama / Darkness": 0.031041770833333333,
+      "Positive / Uplifting": 0.014100000000000001,
+      "Contemplative": 0.03217618055555555
+    },
+    "361": {
+      "Tension / Danger": 0.04884854166666667,
+      "Drama / Darkness": 0.0241575,
+      "Positive / Uplifting": 0.004863703703703704,
+      "Contemplative": 0.025541666666666667
+    },
+    "362": {
+      "Tension / Danger": 0.06812647058823529,
+      "Drama / Darkness": 0.03635691176470589,
+      "Positive / Uplifting": 0.009510849673202613,
+      "Contemplative": 0.03574637254901961
+    },
+    "363": {
+      "Tension / Danger": 0.0364325,
+      "Drama / Darkness": 0.010628863636363636,
+      "Positive / Uplifting": 0.011759898989898989,
+      "Contemplative": 0.03144704545454545
+    },
+    "364": {
+      "Tension / Danger": 0.019990416666666667,
+      "Drama / Darkness": 0.018859375,
+      "Positive / Uplifting": 0.015166111111111113,
+      "Contemplative": 0.026945277777777776
+    },
+    "365": {
+      "Tension / Danger": 0.036836764705882354,
+      "Drama / Darkness": 0.018892941176470585,
+      "Positive / Uplifting": 0.01691627450980392,
+      "Contemplative": 0.035023823529411774
+    },
+    "366": {
+      "Tension / Danger": 0.03032779411764705,
+      "Drama / Darkness": 0.019458676470588236,
+      "Positive / Uplifting": 0.006103725490196078,
+      "Contemplative": 0.029145784313725494
+    },
+    "367": {
+      "Tension / Danger": 0.05196816666666666,
+      "Drama / Darkness": 0.028515333333333334,
+      "Positive / Uplifting": 0.012111407407407408,
+      "Contemplative": 0.021996333333333333
+    },
+    "368": {
+      "Tension / Danger": 0.05619263157894737,
+      "Drama / Darkness": 0.023586842105263156,
+      "Positive / Uplifting": 0.005786491228070175,
+      "Contemplative": 0.025052631578947368
+    },
+    "369": {
+      "Tension / Danger": 0.012076153846153848,
+      "Drama / Darkness": 0.014265192307692309,
+      "Positive / Uplifting": 0.00299051282051282,
+      "Contemplative": 0.04189961538461538
+    },
+    "370": {
+      "Tension / Danger": 0.07639525,
+      "Drama / Darkness": 0.02603375,
+      "Positive / Uplifting": 0.006282500000000001,
+      "Contemplative": 0.021362166666666668
+    },
+    "371": {
+      "Tension / Danger": 0.04324231481481481,
+      "Drama / Darkness": 0.011688425925925925,
+      "Positive / Uplifting": 0.011666913580246914,
+      "Contemplative": 0.025147160493827165
+    },
+    "372": {
+      "Tension / Danger": 0.063031,
+      "Drama / Darkness": 0.016349166666666668,
+      "Positive / Uplifting": 0.004798888888888889,
+      "Contemplative": 0.03257377777777778
+    },
+    "373": {
+      "Tension / Danger": 0.060515882352941176,
+      "Drama / Darkness": 0.041080735294117654,
+      "Positive / Uplifting": 0.0036748366013071897,
+      "Contemplative": 0.0319543137254902
+    },
+    "374": {
+      "Tension / Danger": 0.0250925,
+      "Drama / Darkness": 0.04167078947368421,
+      "Positive / Uplifting": 0.009274619883040935,
+      "Contemplative": 0.023298947368421054
+    },
+    "375": {
+      "Tension / Danger": 0.04099180555555556,
+      "Drama / Darkness": 0.02734027777777778,
+      "Positive / Uplifting": 0.004938024691358025,
+      "Contemplative": 0.027562870370370366
+    },
+    "376": {
+      "Tension / Danger": 0.062295666666666666,
+      "Drama / Darkness": 0.030388000000000002,
+      "Positive / Uplifting": 0.005601333333333334,
+      "Contemplative": 0.02279566666666667
+    },
+    "377": {
+      "Tension / Danger": 0.02030333333333333,
+      "Drama / Darkness": 0.029432833333333335,
+      "Positive / Uplifting": 0.021292370370370375,
+      "Contemplative": 0.016723444444444444
+    },
+    "378": {
+      "Tension / Danger": 0.01760875,
+      "Drama / Darkness": 0.021644027777777776,
+      "Positive / Uplifting": 0.014909753086419753,
+      "Contemplative": 0.03223444444444445
+    },
+    "379": {
+      "Tension / Danger": 0.0231096875,
+      "Drama / Darkness": 0.013989999999999997,
+      "Positive / Uplifting": 0.00845462962962963,
+      "Contemplative": 0.03789736111111111
+    },
+    "380": {
+      "Tension / Danger": 0.018814318181818182,
+      "Drama / Darkness": 0.02194159090909091,
+      "Positive / Uplifting": 0.01736989898989899,
+      "Contemplative": 0.02724242424242424
+    },
+    "381": {
+      "Tension / Danger": 0.025424852941176468,
+      "Drama / Darkness": 0.04407191176470589,
+      "Positive / Uplifting": 0.01387078431372549,
+      "Contemplative": 0.0197721568627451
+    },
+    "382": {
+      "Tension / Danger": 0.027933289473684213,
+      "Drama / Darkness": 0.03026118421052631,
+      "Positive / Uplifting": 0.009011520467836258,
+      "Contemplative": 0.02559140350877193
+    },
+    "383": {
+      "Tension / Danger": 0.040731166666666666,
+      "Drama / Darkness": 0.046407,
+      "Positive / Uplifting": 0.006769777777777778,
+      "Contemplative": 0.016258777777777778
+    },
+    "384": {
+      "Tension / Danger": 0.047111607142857136,
+      "Drama / Darkness": 0.040080535714285714,
+      "Positive / Uplifting": 0.009616269841269846,
+      "Contemplative": 0.0320745238095238
+    },
+    "385": {
+      "Tension / Danger": 0.014997777777777777,
+      "Drama / Darkness": 0.022575138888888888,
+      "Positive / Uplifting": 0.02875117283950617,
+      "Contemplative": 0.02546972222222222
+    },
+    "386": {
+      "Tension / Danger": 0.056334999999999996,
+      "Drama / Darkness": 0.0412495,
+      "Positive / Uplifting": 0.01718348148148148,
+      "Contemplative": 0.022799555555555552
+    },
+    "387": {
+      "Tension / Danger": 0.04279249999999999,
+      "Drama / Darkness": 0.03492854166666667,
+      "Positive / Uplifting": 0.003606111111111112,
+      "Contemplative": 0.02344027777777778
+    },
+    "388": {
+      "Tension / Danger": 0.03167642857142857,
+      "Drama / Darkness": 0.021619404761904763,
+      "Positive / Uplifting": 0.0214137037037037,
+      "Contemplative": 0.026944365079365082
+    },
+    "389": {
+      "Tension / Danger": 0.03015375,
+      "Drama / Darkness": 0.014797250000000001,
+      "Positive / Uplifting": 0.01903511111111111,
+      "Contemplative": 0.0265695
+    },
+    "390": {
+      "Tension / Danger": 0.00942765625,
+      "Drama / Darkness": 0.01669015625,
+      "Positive / Uplifting": 0.009260625000000001,
+      "Contemplative": 0.038016979166666666
+    },
+    "391": {
+      "Tension / Danger": 0.015903333333333332,
+      "Drama / Darkness": 0.030664166666666666,
+      "Positive / Uplifting": 0.026173086419753088,
+      "Contemplative": 0.021360925925925926
+    },
+    "392": {
+      "Tension / Danger": 0.015604583333333333,
+      "Drama / Darkness": 0.0074075,
+      "Positive / Uplifting": 0.01437537037037037,
+      "Contemplative": 0.04750569444444445
+    },
+    "393": {
+      "Tension / Danger": 0.03088013157894737,
+      "Drama / Darkness": 0.018129342105263156,
+      "Positive / Uplifting": 0.006810409356725146,
+      "Contemplative": 0.035320701754385966
+    },
+    "394": {
+      "Tension / Danger": 0.029037236842105258,
+      "Drama / Darkness": 0.03807144736842106,
+      "Positive / Uplifting": 0.019730292397660817,
+      "Contemplative": 0.03695210526315789
+    },
+    "395": {
+      "Tension / Danger": 0.020374264705882356,
+      "Drama / Darkness": 0.029297941176470586,
+      "Positive / Uplifting": 0.02075901960784314,
+      "Contemplative": 0.03800303921568628
+    },
+    "396": {
+      "Tension / Danger": 0.009571071428571427,
+      "Drama / Darkness": 0.04002392857142857,
+      "Positive / Uplifting": 0.020483968253968258,
+      "Contemplative": 0.02972333333333333
+    },
+    "397": {
+      "Tension / Danger": 0.032230749999999996,
+      "Drama / Darkness": 0.040283125,
+      "Positive / Uplifting": 0.0085465,
+      "Contemplative": 0.031031333333333334
+    },
+    "398": {
+      "Tension / Danger": 0.0290615,
+      "Drama / Darkness": 0.01972125,
+      "Positive / Uplifting": 0.006875666666666666,
+      "Contemplative": 0.03255466666666666
+    },
+    "399": {
+      "Tension / Danger": 0.031226666666666663,
+      "Drama / Darkness": 0.011960555555555554,
+      "Positive / Uplifting": 0.0041031481481481474,
+      "Contemplative": 0.025507129629629626
+    },
+    "400": {
+      "Tension / Danger": 0.040260892857142856,
+      "Drama / Darkness": 0.01585642857142857,
+      "Positive / Uplifting": 0.030594047619047614,
+      "Contemplative": 0.023943095238095242
+    },
+    "401": {
+      "Tension / Danger": 0.024884499999999997,
+      "Drama / Darkness": 0.021901000000000004,
+      "Positive / Uplifting": 0.0368551111111111,
+      "Contemplative": 0.033391222222222225
+    },
+    "402": {
+      "Tension / Danger": 0.03020838235294118,
+      "Drama / Darkness": 0.010325735294117644,
+      "Positive / Uplifting": 0.02133084967320261,
+      "Contemplative": 0.03288607843137255
+    },
+    "403": {
+      "Tension / Danger": 0.043235833333333334,
+      "Drama / Darkness": 0.014614444444444446,
+      "Positive / Uplifting": 0.00775567901234568,
+      "Contemplative": 0.01736888888888889
+    },
+    "404": {
+      "Tension / Danger": 0.025503750000000002,
+      "Drama / Darkness": 0.05272114583333334,
+      "Positive / Uplifting": 0.006039768518518517,
+      "Contemplative": 0.03717041666666667
+    },
+    "405": {
+      "Tension / Danger": 0.020124666666666673,
+      "Drama / Darkness": 0.03343416666666666,
+      "Positive / Uplifting": 0.004877629629629629,
+      "Contemplative": 0.048650555555555565
+    },
+    "406": {
+      "Tension / Danger": 0.030029444444444442,
+      "Drama / Darkness": 0.06865361111111111,
+      "Positive / Uplifting": 0.022764691358024693,
+      "Contemplative": 0.019098703703703705
+    }
+  }
+}
