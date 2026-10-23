@@ -3,7 +3,7 @@
 **Turns a novel into an emotional map: per-sentence emotions, and a Valence/Arousal curve across
 the pages.**
 
-This is the *text side* of [**Music Supervisor**](https://github.com/medusa606/manuscript_app) (working title), an app
+This is the *text side* of [**Music Supervisor**](https://github.com/medusa606/manuscript_app), an app
 that scores music to the book you're reading. emotion-reader works out how each part of the story
 *feels*. Its sister repo [**music_mood**](https://github.com/medusa606/music_mood) works out how each
 piece of music feels. Matching the two lets the soundtrack follow the drama.
