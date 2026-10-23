@@ -1,0 +1,12 @@
+torch
+transformers
+nltk
+requests
+numpy
+pandas
+matplotlib
+tqdm
+psutil
+flask
+flask-cors
+beautifulsoup4
