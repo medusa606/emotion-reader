@@ -3,7 +3,7 @@
 **Turns a novel into an emotional map: per-sentence emotions, and a Valence/Arousal curve across
 the pages.**
 
-This is the *text side* of [**Manuscript**](https://github.com/medusa606/manuscript_app), an app
+This is the *text side* of [**Music Supervisor**](https://github.com/medusa606/manuscript_app) (working title), an app
 that scores music to the book you're reading. emotion-reader works out how each part of the story
 *feels*. Its sister repo [**music_mood**](https://github.com/medusa606/music_mood) works out how each
 piece of music feels. Matching the two lets the soundtrack follow the drama.
@@ -19,8 +19,8 @@ book, peaks several times, and climbs again at the climax.*
 
 ```text
  ┌──────────────────┐   ┌──────────────────────────┐   ┌──────────────────┐
- │ book catalogue   │   │ emotion-reader           │   │ music_mood       │
- │ (LLM metadata)   │   │ ◄── YOU ARE HERE         │   │ (track VA)       │
+ │ db_builder       │   │ emotion-reader           │   │ music_mood       │
+ │ (book metadata)  │   │ ◄── YOU ARE HERE         │   │ (track VA)       │
  └────────┬─────────┘   └────────────┬─────────────┘   └────────┬─────────┘
           │                          ┆ page-level VA curve      ┆ track VA
           ▼                          ▼                          ▼
@@ -172,8 +172,10 @@ main.py              PyCharm placeholder, not used
   A −0.03…+0.17. Before matching against music, normalise the curve per book (e.g. min-max or z-score).
 * **Pages are synthetic** (40 non-blank lines). Chapter detection (`CHAPTER …` headings) would
   give natural places to change track.
-* **Only public-domain Gutenberg texts** in a hard-coded list. Modern books would need the user's
-  own ebook text.
+* **Only public-domain Gutenberg texts** in a hard-coded list. In the app, readers will supply
+  their own ebook, so this needs an EPUB/text import path. Because the models are too heavy for a
+  phone, run the analysis server-side and return just the VA curve. Curves can then be cached per
+  ISBN, so each book only has to be analysed once.
 * **No export for the app yet.** A compact per-book JSON (`[{page, v, a, group}]`) is the obvious
   hand-off format.
 * **Leitmotifs:** running NER (e.g. spaCy) over the sentence CSV would show which characters are
